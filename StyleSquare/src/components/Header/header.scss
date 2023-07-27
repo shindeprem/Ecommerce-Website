@@ -1,0 +1,148 @@
+@media screen and (max-width:460px) {
+    .header-section{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        background-color: #2874F0;
+        padding-bottom: 1.3rem;
+
+        .header-container{
+            height: 50px;
+            padding: 5px 10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            row-gap: .4rem;
+            margin-bottom: 10px;
+
+            .upper-section-header{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .logo-container{
+                display: flex;
+                align-items: center;
+                column-gap: 5px;
+                color: #fff;
+
+                .page-logo{
+                    font-size: 1.5rem;
+                }
+
+                .logo-heading{
+                    font-size: 1.37rem;
+                    font-weight: 900;
+                }
+            }
+
+            .signup-login-container{
+                .sign-login-menu-icon{
+                    color: #fff;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    margin-right: 5px;
+                }
+                .singup-login-menu{
+                    position: absolute;
+                    padding: 0;
+                    right: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 130px;
+                    z-index: 100;
+                    background-color: #fff;
+                    box-sizing: border-box;
+                    box-shadow: 0 0 8px rgba(0, 0, 0, 0.71);
+
+                    .login-container{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 7px;
+                        background-color: #ffffff;
+                        margin: 0;
+                        border-bottom: 1px solid gray;
+
+                        &:hover{
+                            background-color: #2874F0;
+                            color: #fff;
+                        }
+                        h3{
+                            font-size: 18px;
+                            font-weight: 700;
+                        }
+                        .login-icon{
+                            font-size: 28px;
+                            font-weight: 900;
+                            height: max-content;
+                            padding-top: 3px;
+                        }
+                    }
+                    .signup-container{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 7px;
+                        margin: 0;
+                        &:hover{
+                            background-color: #2874F0;
+                            color: #fff;
+                        }
+                        h3{
+                            font-size: 18px;
+                            font-weight: 700;
+                        }
+                        .signup-icon{
+                            font-size: 28px;
+                            font-weight: 900;
+                            height: max-content;
+                            padding-top: 3px;
+                        }
+                    }
+                }
+            }
+
+            .search-container{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                form{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    input{
+                        flex: 1;
+                        padding: 9px 7px;
+                        border: none;
+                        outline: none;
+                        border-radius: 10px 0 0 10px;
+                        font-size: 16px;
+                        font-weight: 500;
+    
+                        &::placeholder{
+                            font-size: 15px;
+                        }
+                    }
+                    button{
+                        padding: 5.4px 7px;
+                        font-size: 18px;
+                        font-weight: 900;
+                        border-radius: 0 10px 10px 0;
+                        border: none;
+                        outline: none;
+                    }
+                }
+
+                
+            
+            }
+        }
+    }
+}
