@@ -1,1 +1,16 @@
-/*# sourceMappingURL=carouselHeader.css.map */
+@media screen and (max-width: 460px) {
+  .ad {
+    width: 100%;
+  }
+  .carousel {
+    width: 100px;
+    margin: 0 auto;
+  }
+  .carousel .thumbs-wrapper {
+    display: none;
+  }
+  .carousel .slide.selected {
+    opacity: 1;
+    width: 100%;
+  }
+}/*# sourceMappingURL=carouselHeader.css.map */
