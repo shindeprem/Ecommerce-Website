@@ -9,8 +9,8 @@
     display: flex;
     align-items: center;
     padding: 10px 10px;
-    -moz-column-gap: 5px;
-         column-gap: 5px;
+    -moz-column-gap: 3px;
+         column-gap: 3px;
   }
   .dropdowns-container .dropdown-menu h3 {
     font-size: 1rem;
