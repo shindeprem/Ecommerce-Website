@@ -7,7 +7,7 @@ import {AiFillCaretRight} from 'react-icons/ai'
 import {AiFillCaretLeft} from 'react-icons/ai'
 
 const ProductsCarousel=(prop)=>{
-    console.log(prop);
+    //console.log(prop);
 
     const productsContainerRef = useRef(null);
 
