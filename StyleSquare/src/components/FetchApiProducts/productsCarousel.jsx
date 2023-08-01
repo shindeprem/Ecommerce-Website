@@ -3,6 +3,7 @@ import './productCarousel.css'
 import shirt1 from '../../assets/images/blue-striped-shirt.jpg'
 import shirt2 from '../../assets/images/white-btn-shirt.jpg'
 import shirt3 from '../../assets/images/red-plaid-shirt.jpg'
+import saree1 from '../../assets/images/saree.jpg'
 import {AiFillCaretRight} from 'react-icons/ai'
 import {AiFillCaretLeft} from 'react-icons/ai'
 
@@ -105,7 +106,7 @@ const ProductsCarousel=(prop)=>{
             name: "Elegant Silk Saree",
             price: 899.99,
             color: "Red",
-            image: "elegant_silk_saree.jpg",
+            image: saree1,
             description: "An exquisite silk saree with intricate designs, perfect for special occasions.",
             stock: 10,
             category:"saree"
