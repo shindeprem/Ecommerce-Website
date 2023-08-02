@@ -17,7 +17,9 @@ const MainPage =()=>{
     <AllBrands/>
     {/* Add another infinite moving list */}
     {/* Add another product lists */}
+    <ProductsCarousel category='kids'/>
     {/* Add another product lists */}
+    <ProductsCarousel category='accessories'/>
     {/* Footer */}
     </>
     )
