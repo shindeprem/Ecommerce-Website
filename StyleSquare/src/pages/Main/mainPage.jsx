@@ -4,6 +4,7 @@ import CarouselHeader from "../../components/main-page-carousel/carouselHeader";
 import ProductsCarousel from "../../components/FetchApiProducts/productsCarousel";
 import './mainPage.css'
 import AllBrands from "../../components/Brands/Brands";
+import Footer from "../../components/Footer/footer";
 
 const MainPage =()=>{
 
@@ -21,6 +22,7 @@ const MainPage =()=>{
     {/* Add another product lists */}
     <ProductsCarousel category='accessories'/>
     {/* Footer */}
+    <Footer/>
     </>
     )
 }
