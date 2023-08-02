@@ -1,1 +1,63 @@
-/*# sourceMappingURL=footer.css.map */
+@media screen and (max-width: 460px) {
+  .footer-section {
+    padding: 25px 15px 15px;
+    background-color: #2874F0;
+    display: grid;
+    grid-template-areas: "email email" "checkout categories";
+    row-gap: 1.4rem;
+  }
+  .footer-section div {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(243, 242, 242, 0.7411764706);
+  }
+  .footer-section div:hover {
+    color: #fff;
+  }
+  .footer-section .to-pages {
+    grid-area: checkout;
+  }
+  .footer-section .category-section {
+    grid-area: categories;
+  }
+  .footer-section .subscribe-for-deals {
+    grid-area: email;
+  }
+  .footer-section .subscribe-for-deals form {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    max-width: 500px;
+  }
+  .footer-section .subscribe-for-deals form input {
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    background-color: transparent;
+    display: flex;
+    flex: 1;
+    color: white;
+    font-size: 18px;
+  }
+  .footer-section .subscribe-for-deals form input::-moz-placeholder {
+    color: white;
+    font-size: 18px;
+  }
+  .footer-section .subscribe-for-deals form input::placeholder {
+    color: white;
+    font-size: 18px;
+  }
+  .footer-section .subscribe-for-deals form button {
+    padding: 13px 15px;
+    border-radius: 15px;
+    background-color: #000;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}/*# sourceMappingURL=footer.css.map */

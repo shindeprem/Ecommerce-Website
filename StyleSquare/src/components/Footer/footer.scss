@@ -1,2 +1,67 @@
 @media screen and (max-width:460px) {
+    .footer-section{
+        padding: 25px 15px 15px;
+        background-color: #2874F0;
+        display: grid;
+        grid-template-areas: "email email"
+                            "checkout categories";
+        div{
+            font-size:  18px;
+            font-weight: 600;
+            color: #f3f2f2bd;
+
+            &:hover{
+                color: #fff;
+            }
+        }
+
+        row-gap: 1.4rem;
+
+        .to-pages{
+            grid-area: checkout;
+        }
+
+        .category-section{
+            grid-area: categories;
+        }
+        .subscribe-for-deals{
+            grid-area: email;
+            
+            form{
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                column-gap: 1rem;
+                max-width: 500px;
+
+                input{
+                    padding: 10px 0;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid;
+                    background-color: transparent;
+                    display: flex;
+                    flex: 1;
+                    color: white;
+                    font-size: 18px;
+
+                    &::placeholder{
+                        color: white;
+                        font-size: 18px;
+                    }
+                }
+
+                button{
+                    padding: 13px 15px;
+                    border-radius: 15px;
+                    background-color: #000;
+                    color: white;
+                    border: none;
+                    outline: none;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
 }

@@ -3,7 +3,48 @@ import './footer.css'
 
 const Footer = ()=>{
     return(
-        <></>
+        <div className="footer-section">
+            <div className="to-pages">
+                <div className="about-page">
+                    About
+                </div>
+                <div className="contact-page">
+                    Contact Us
+                </div>
+                <div className="customer-page">
+                    Customer
+                </div>
+                <div className="deals-page">
+                    Deals
+                </div>
+            </div>
+
+            <div className="category-sections">
+                <div className="mens-section">Mens</div>
+                <div className="womens-section">Womens</div>
+                <div className="kids-section">Kids</div>
+                <div className="mens-section">Accessories</div>
+            </div>
+
+            <div className="all-socials">
+                <div className="facebook-container">
+
+                </div>
+                <div className="instagram-container">
+
+                </div>
+            </div>
+
+            <div className="subscribe-for-deals">
+                <form>
+                    <input type="email" name="user-email" id="" placeholder="Plaese Enter your email"/>
+                    <button type="submit" className="subscribe-btn">
+                        Subscribe
+                    </button>
+                </form>
+                
+            </div>
+        </div>
     )
 }
 export default Footer
