@@ -10,6 +10,7 @@ import './Brands.css'
 const AllBrands = () =>{
     return(
         <div className="all-brands-container">
+            <h1 className="brands-heading">Top Brands</h1>
             <div className="all-brands">
                 <div className="brand-logo">
                     <img src={img3} alt="" />

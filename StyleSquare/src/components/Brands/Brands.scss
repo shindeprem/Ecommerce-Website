@@ -1,21 +1,52 @@
 @media screen and (max-width:460px) {
     .all-brands-container{
+        .brands-heading{
+            width: max-content;
+            font-size: 27px;
+            font-weight: 900;
+            margin-left: 15px;
+            position: relative;
+
+            &:after{
+                content: "";
+                background-color: #2874F0;
+                padding: 3px;
+                width: 148px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                top: 38px;
+            }
+        }
         .all-brands{
             width: 100%;
             display: grid;
-            grid-template-columns: repeat(1,1fr);
+            grid-template-columns: repeat(2,1fr);
+            margin-top: 15px;
+            row-gap: 10px;
+        
             .brand-logo{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: max-content;
+                //width: max-content;
+                width: 80%;
                 align-self: center;
                 margin: 0 auto;
                 height: 160px;
+                padding: 7px;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                background-color: #F3F2F2;
+                overflow: hidden;
 
                 img{
-                    max-width: 190px;
+                    //max-width: 190px;
+                    width: 140px;
+                }
 
+                &:hover{
+                    background-color: #fff;
                 }
             }
         }
