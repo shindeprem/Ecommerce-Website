@@ -1,0 +1,23 @@
+@media screen and (max-width:460px) {
+    .all-brands-container{
+        .all-brands{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            .brand-logo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: max-content;
+                align-self: center;
+                margin: 0 auto;
+                height: 160px;
+
+                img{
+                    max-width: 190px;
+
+                }
+            }
+        }
+    }
+}
