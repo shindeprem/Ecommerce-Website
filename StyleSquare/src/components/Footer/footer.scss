@@ -24,6 +24,22 @@
         .category-section{
             grid-area: categories;
         }
+
+        .all-socials{
+            display: flex;
+            column-gap: 1rem;
+            width: max-content;
+
+            .facebook-container{
+                font-size: 22px;
+                width: max-content;
+            }
+
+            .instagram-container{
+                font-size: 22px;
+                width: max-content;
+            }
+        }
         .subscribe-for-deals{
             grid-area: email;
             

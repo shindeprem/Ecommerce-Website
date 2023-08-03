@@ -1,4 +1,6 @@
 import React from "react";
+import {AiFillFacebook} from 'react-icons/ai'
+import {BsInstagram} from 'react-icons/bs'
 import './footer.css'
 
 const Footer = ()=>{
@@ -28,10 +30,10 @@ const Footer = ()=>{
 
             <div className="all-socials">
                 <div className="facebook-container">
-
+                    <AiFillFacebook/>
                 </div>
                 <div className="instagram-container">
-
+                    <BsInstagram/>
                 </div>
             </div>
 

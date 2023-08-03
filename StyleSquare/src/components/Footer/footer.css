@@ -20,6 +20,23 @@
   .footer-section .category-section {
     grid-area: categories;
   }
+  .footer-section .all-socials {
+    display: flex;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .footer-section .all-socials .facebook-container {
+    font-size: 22px;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .footer-section .all-socials .instagram-container {
+    font-size: 22px;
+    width: -moz-max-content;
+    width: max-content;
+  }
   .footer-section .subscribe-for-deals {
     grid-area: email;
   }
