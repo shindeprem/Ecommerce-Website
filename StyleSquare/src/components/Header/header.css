@@ -148,13 +148,13 @@
   }
   .header-section .header-container {
     height: 86px;
-    padding: 5px 10px;
+    padding: 8px 10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    row-gap: 0.4rem;
+    row-gap: 0.6rem;
     margin-bottom: 6px;
   }
   .header-section .header-container .upper-section-header {
@@ -259,7 +259,7 @@
     border: none;
     outline: none;
     border-radius: 10px 0 0 10px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
   }
   .header-section .header-container .search-container form input::-moz-placeholder {
@@ -270,7 +270,7 @@
   }
   .header-section .header-container .search-container form button {
     padding: 4.8px 7px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 900;
     border-radius: 0 10px 10px 0;
     border: none;
