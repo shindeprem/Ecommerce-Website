@@ -136,4 +136,144 @@
     border: none;
     outline: none;
   }
+}
+@media (min-width: 460px) and (max-width: 800px) {
+  .header-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #2874F0;
+  }
+  .header-section .header-container {
+    height: 86px;
+    padding: 5px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0.4rem;
+    margin-bottom: 6px;
+  }
+  .header-section .header-container .upper-section-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .header-section .header-container .logo-container {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    color: #fff;
+  }
+  .header-section .header-container .logo-container .page-logo {
+    font-size: 1.7rem;
+    display: flex;
+    margin-bottom: 3px;
+  }
+  .header-section .header-container .logo-container .logo-heading {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  .header-section .header-container .signup-login-container .sign-login-menu-icon {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-right: 5px;
+  }
+  .header-section .header-container .signup-login-container .singup-login-menu {
+    position: absolute;
+    padding: 0;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 130px;
+    z-index: 100;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.71);
+  }
+  .header-section .header-container .signup-login-container .singup-login-menu .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7px;
+    background-color: #ffffff;
+    margin: 0;
+    border-bottom: 1px solid gray;
+  }
+  .header-section .header-container .signup-login-container .singup-login-menu .login-container:hover {
+    background-color: #2874F0;
+    color: #fff;
+  }
+  .header-section .header-container .signup-login-container .singup-login-menu .login-container h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .header-section .header-container .signup-login-container .singup-login-menu .login-container .login-icon {
+    font-size: 28px;
+    font-weight: 900;
+    height: -moz-max-content;
+    height: max-content;
+    padding-top: 3px;
+  }
+  .header-section .header-container .signup-login-container .singup-login-menu .signup-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7px;
+    margin: 0;
+  }
+  .header-section .header-container .signup-login-container .singup-login-menu .signup-container:hover {
+    background-color: #2874F0;
+    color: #fff;
+  }
+  .header-section .header-container .signup-login-container .singup-login-menu .signup-container h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .header-section .header-container .signup-login-container .singup-login-menu .signup-container .signup-icon {
+    font-size: 28px;
+    font-weight: 900;
+    height: -moz-max-content;
+    height: max-content;
+    padding-top: 3px;
+  }
+  .header-section .header-container .search-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-section .header-container .search-container form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .header-section .header-container .search-container form input {
+    flex: 1;
+    padding: 10px 7px;
+    border: none;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .header-section .header-container .search-container form input::-moz-placeholder {
+    font-size: 16.8px;
+  }
+  .header-section .header-container .search-container form input::placeholder {
+    font-size: 16.8px;
+  }
+  .header-section .header-container .search-container form button {
+    padding: 4.8px 7px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    outline: none;
+  }
 }/*# sourceMappingURL=header.css.map */
