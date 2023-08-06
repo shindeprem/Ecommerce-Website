@@ -7,6 +7,7 @@ const Footer = ()=>{
     return(
         <div className="footer-section">
             <div className="to-pages">
+                <h2>Checkout</h2>
                 <div className="about-page">
                     About
                 </div>
@@ -22,6 +23,7 @@ const Footer = ()=>{
             </div>
 
             <div className="category-sections">
+                <h2>Categories</h2>
                 <div className="mens-section">Mens</div>
                 <div className="womens-section">Womens</div>
                 <div className="kids-section">Kids</div>

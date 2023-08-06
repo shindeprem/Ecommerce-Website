@@ -1,10 +1,10 @@
 @media screen and (max-width: 460px) {
   .footer-section {
-    padding: 25px 15px 15px;
+    padding: 25px 15px 35px;
     background-color: #2874F0;
     display: grid;
-    grid-template-areas: "email email" "checkout categories";
-    row-gap: 1.4rem;
+    grid-template-areas: "email email" "socials socials" "checkout categories";
+    row-gap: 1.3rem;
   }
   .footer-section div {
     font-size: 18px;
@@ -17,8 +17,34 @@
   .footer-section .to-pages {
     grid-area: checkout;
   }
-  .footer-section .category-section {
+  .footer-section .to-pages h2 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 0.6rem;
+    color: white;
+  }
+  .footer-section .to-pages div {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .footer-section .to-pages div:hover {
+    text-shadow: 0 0 8px #00ffff;
+  }
+  .footer-section .category-sections {
     grid-area: categories;
+  }
+  .footer-section .category-sections h2 {
+    font-size: 20px;
+    margin-bottom: 0.6rem;
+    font-weight: 900;
+    color: white;
+  }
+  .footer-section .category-sections div {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .footer-section .category-sections div:hover {
+    text-shadow: 0 0 8px #00ffff;
   }
   .footer-section .all-socials {
     display: flex;
@@ -26,6 +52,9 @@
          column-gap: 1rem;
     width: -moz-max-content;
     width: max-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-area: socials;
   }
   .footer-section .all-socials .facebook-container {
     font-size: 22px;
@@ -39,33 +68,36 @@
   }
   .footer-section .subscribe-for-deals {
     grid-area: email;
+    width: 100%;
+    overflow: hidden;
   }
   .footer-section .subscribe-for-deals form {
-    width: 100%;
     display: flex;
-    justify-content: flex-start;
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
-    max-width: 500px;
+    justify-content: space-between;
+    max-width: 400px;
   }
   .footer-section .subscribe-for-deals form input {
     padding: 10px 0;
     border: none;
     outline: none;
-    border-bottom: 1px solid;
+    width: 100%;
     background-color: transparent;
     display: flex;
+    border-bottom: 1px solid;
     flex: 1;
     color: white;
+    max-width: 300px;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
     font-size: 18px;
   }
   .footer-section .subscribe-for-deals form input::-moz-placeholder {
     color: white;
-    font-size: 18px;
+    font-size: 17px;
   }
   .footer-section .subscribe-for-deals form input::placeholder {
     color: white;
-    font-size: 18px;
+    font-size: 17px;
   }
   .footer-section .subscribe-for-deals form button {
     padding: 13px 15px;

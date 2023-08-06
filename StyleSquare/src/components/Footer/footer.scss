@@ -1,9 +1,10 @@
 @media screen and (max-width:460px) {
     .footer-section{
-        padding: 25px 15px 15px;
+        padding: 25px 15px 35px;
         background-color: #2874F0;
         display: grid;
         grid-template-areas: "email email"
+                             "socials socials"
                             "checkout categories";
         div{
             font-size:  18px;
@@ -15,20 +16,53 @@
             }
         }
 
-        row-gap: 1.4rem;
+        row-gap: 1.3rem;
 
         .to-pages{
             grid-area: checkout;
+
+            h2{
+                font-size: 20px;
+                font-weight: 900;
+                margin-bottom: .6rem;
+                color: white;
+            }
+            
+            div{
+                width: max-content;
+                &:hover{
+                    text-shadow: 0 0 8px #00ffff;
+                   
+                }
+            }
         }
 
-        .category-section{
+        .category-sections{
             grid-area: categories;
+
+            h2{
+                font-size: 20px;
+                margin-bottom: .6rem;
+                font-weight: 900;
+                color: white;
+            }
+
+            div{
+                width: max-content;
+                &:hover{
+                    text-shadow: 0 0 8px #00ffff;
+
+                }
+            }
         }
 
         .all-socials{
             display: flex;
             column-gap: 1rem;
             width: max-content;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-area: socials;
 
             .facebook-container{
                 font-size: 22px;
@@ -42,28 +76,31 @@
         }
         .subscribe-for-deals{
             grid-area: email;
+            width: 100%;
+            overflow: hidden;
             
             form{
-                width: 100%;
                 display: flex;
-                justify-content: flex-start;
-                column-gap: 1rem;
-                max-width: 500px;
+                justify-content: space-between;
+                max-width: 400px;
 
                 input{
                     padding: 10px 0;
                     border: none;
                     outline: none;
-                    border-bottom: 1px solid;
+                    width: 100%;
                     background-color: transparent;
                     display: flex;
+                    border-bottom: 1px solid ;
                     flex: 1;
                     color: white;
+                    max-width: 300px;
+                    column-gap: 1rem;
                     font-size: 18px;
 
                     &::placeholder{
                         color: white;
-                        font-size: 18px;
+                        font-size: 17px;
                     }
                 }
 
