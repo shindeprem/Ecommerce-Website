@@ -43,7 +43,7 @@ const Footer = ()=>{
 
                 <div className="subscribe-for-deals">
                     <form>
-                        <input type="email" name="user-email" id="" placeholder="Plaese Enter your email"/>
+                        <input type="email" name="user-email" id="" placeholder="Please Enter your email"/>
                         <button type="submit" className="subscribe-btn">
                             Subscribe
                         </button>
