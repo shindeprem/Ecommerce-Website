@@ -109,4 +109,118 @@
     display: block;
     transition: 0.3s ease-in-out;
   }
+}
+@media (min-width: 460px) and (max-width: 800px) {
+  .products-carousel {
+    margin: 15px 0;
+  }
+  .products-carousel .scrollDiv {
+    padding: 10px 0 10px 10px;
+    display: flex;
+    align-items: center;
+  }
+  .products-carousel .scrollDiv .itemsContainer {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    padding: 15px 25px 15px 0;
+  }
+  .products-carousel .scrollDiv .itemsContainer::-webkit-scrollbar {
+    display: none;
+  }
+  .products-carousel .scrollDiv .itemsContainer::-webkit-scrollbar-button {
+    display: none;
+  }
+  .products-carousel .scrollDiv .itemsContainer::-webkit-scrollbar-thumb {
+    display: none;
+  }
+  .products-carousel .scrollDiv .itemsContainer::-webkit-scrollbar-track {
+    display: none;
+  }
+  .products-carousel .scrollDiv .itemsContainer::-webkit-scrollbar-track-piece {
+    display: none;
+  }
+  .products-carousel .scrollDiv .itemsContainer .item-card {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #F3F2F2;
+    cursor: pointer;
+  }
+  .products-carousel .scrollDiv .itemsContainer .item-card .img-container {
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    height: 200px;
+    width: 100%;
+  }
+  .products-carousel .scrollDiv .itemsContainer .item-card .img-container img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px 5px 0 0;
+    transition: transform 0.3s ease-in;
+  }
+  .products-carousel .scrollDiv .itemsContainer .item-card .img-container:hover {
+    overflow: hidden;
+    transition: 0.3s ease-in;
+  }
+  .products-carousel .scrollDiv .itemsContainer .item-card .img-container:hover img {
+    transform: scale(1.1);
+    border-radius: 5px 5px 0 0;
+  }
+  .products-carousel .scrollDiv .itemsContainer .item-card .info-container {
+    padding: 5px 10px;
+    width: 185px;
+    background-color: #F3F2F2;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .products-carousel .scrollDiv .itemsContainer .item-card .info-container .card-heading {
+    font-weight: 600;
+    font-size: 22px;
+    margin: 5px 0;
+  }
+  .products-carousel .scrollDiv .itemsContainer .item-card .info-container .product-price {
+    font-weight: 900;
+    font-size: 24px;
+  }
+  .products-carousel .scrollDiv .itemsContainer .item-card:hover {
+    background-color: #fff;
+  }
+  .products-carousel .scrollDiv .itemsContainer .item-card:hover .info-container {
+    background-color: #fff;
+  }
+  .products-carousel .scrollDiv .move-products-btn {
+    position: absolute;
+    z-index: 300;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    background-color: #ffffff;
+    display: none;
+    cursor: pointer;
+  }
+  .products-carousel .scrollDiv .move-products-btn:hover {
+    background-color: #fff;
+  }
+  .products-carousel .scrollDiv .move-right-btn {
+    position: absolute;
+    right: 0;
+  }
+  .products-carousel .scrollDiv .move-left-btn {
+    position: absolute;
+    left: 0;
+  }
+  .products-carousel .scrollDiv:hover {
+    transition: 0.3s ease-in-out;
+  }
+  .products-carousel .scrollDiv:hover .move-products-btn {
+    display: block;
+    transition: 0.3s ease-in-out;
+  }
 }/*# sourceMappingURL=productCarousel.css.map */

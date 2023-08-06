@@ -173,16 +173,19 @@
     font-size: 1.7rem;
     display: flex;
     margin-bottom: 3px;
+    cursor: pointer;
   }
   .header-section .header-container .logo-container .logo-heading {
     font-size: 1.5rem;
     font-weight: 900;
+    cursor: pointer;
   }
   .header-section .header-container .signup-login-container .sign-login-menu-icon {
     color: #fff;
     font-size: 1.6rem;
     font-weight: 700;
     margin-right: 5px;
+    cursor: pointer;
   }
   .header-section .header-container .signup-login-container .singup-login-menu {
     position: absolute;
@@ -204,6 +207,7 @@
     background-color: #ffffff;
     margin: 0;
     border-bottom: 1px solid gray;
+    cursor: pointer;
   }
   .header-section .header-container .signup-login-container .singup-login-menu .login-container:hover {
     background-color: #2874F0;
@@ -226,6 +230,7 @@
     justify-content: space-between;
     padding: 0 7px;
     margin: 0;
+    cursor: pointer;
   }
   .header-section .header-container .signup-login-container .singup-login-menu .signup-container:hover {
     background-color: #2874F0;
@@ -259,7 +264,7 @@
     border: none;
     outline: none;
     border-radius: 10px 0 0 10px;
-    font-size: 18px;
+    font-size: 17.3px;
     font-weight: 500;
   }
   .header-section .header-container .search-container form input::-moz-placeholder {
@@ -275,5 +280,6 @@
     border-radius: 0 10px 10px 0;
     border: none;
     outline: none;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=header.css.map */

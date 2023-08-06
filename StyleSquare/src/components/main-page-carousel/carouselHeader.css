@@ -13,4 +13,39 @@
     opacity: 1;
     width: 100%;
   }
+}
+@media (min-width: 460px) and (max-width: 680px) {
+  .ad {
+    width: 100%;
+  }
+  .carousel {
+    width: 100px;
+    margin: 0 auto;
+  }
+  .carousel .thumbs-wrapper {
+    display: none;
+  }
+  .carousel .slide.selected {
+    opacity: 1;
+    width: 100%;
+  }
+}
+@media (min-width: 680px) and (max-width: 800px) {
+  .ad {
+    width: 100%;
+  }
+  .carousel {
+    width: 100px;
+    margin: 0 auto;
+  }
+  .carousel ul li img {
+    height: 450px;
+  }
+  .carousel .thumbs-wrapper {
+    display: none;
+  }
+  .carousel .slide.selected {
+    opacity: 1;
+    width: 100%;
+  }
 }/*# sourceMappingURL=carouselHeader.css.map */

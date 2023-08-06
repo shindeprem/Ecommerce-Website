@@ -113,4 +113,134 @@
     font-size: 18px;
     font-weight: 500;
   }
+}
+@media (min-width: 460px) and (max-width: 800px) {
+  .footer-section {
+    width: 100%;
+    background-color: #2874F0;
+  }
+  .footer-section .footer-div {
+    padding: 25px 15px 40px;
+    margin: 0 auto;
+    background-color: #2874F0;
+    max-width: 550px;
+    display: grid;
+    grid-template-areas: "email email" "socials socials" "checkout categories";
+    row-gap: 1.3rem;
+  }
+  .footer-section .footer-div div {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(243, 242, 242, 0.7411764706);
+  }
+  .footer-section .footer-div div:hover {
+    color: #fff;
+  }
+  .footer-section .footer-div .to-pages {
+    grid-area: checkout;
+  }
+  .footer-section .footer-div .to-pages h2 {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 0.6rem;
+    color: white;
+  }
+  .footer-section .footer-div .to-pages div {
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .footer-section .footer-div .to-pages div:hover {
+    text-shadow: 0 0 8px #00ffff;
+  }
+  .footer-section .footer-div .category-sections {
+    grid-area: categories;
+  }
+  .footer-section .footer-div .category-sections h2 {
+    font-size: 22px;
+    margin-bottom: 0.6rem;
+    font-weight: 900;
+    color: white;
+  }
+  .footer-section .footer-div .category-sections div {
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .footer-section .footer-div .category-sections div:hover {
+    text-shadow: 0 0 8px #00ffff;
+  }
+  .footer-section .footer-div .all-socials {
+    display: flex;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    width: -moz-max-content;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-area: socials;
+    align-items: center;
+  }
+  .footer-section .footer-div .all-socials .facebook-container {
+    font-size: 28px;
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    cursor: pointer;
+    color: white;
+  }
+  .footer-section .footer-div .all-socials .instagram-container {
+    font-size: 28px;
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    cursor: pointer;
+    color: white;
+  }
+  .footer-section .footer-div .subscribe-for-deals {
+    grid-area: email;
+    width: 100%;
+    overflow: hidden;
+  }
+  .footer-section .footer-div .subscribe-for-deals form {
+    display: flex;
+    max-width: 560px;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+  .footer-section .footer-div .subscribe-for-deals form input {
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    border-bottom: 1px solid;
+    flex: 1;
+    color: white;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    font-size: 20px;
+  }
+  .footer-section .footer-div .subscribe-for-deals form input::-moz-placeholder {
+    color: white;
+    font-size: 18px;
+  }
+  .footer-section .footer-div .subscribe-for-deals form input::placeholder {
+    color: white;
+    font-size: 18px;
+  }
+  .footer-section .footer-div .subscribe-for-deals form button {
+    padding: 13px 15px;
+    border-radius: 15px;
+    background-color: #000;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=footer.css.map */

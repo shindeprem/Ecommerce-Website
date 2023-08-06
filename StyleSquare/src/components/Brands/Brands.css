@@ -42,4 +42,94 @@
   .all-brands-container .all-brands .brand-logo:hover {
     background-color: #fff;
   }
+}
+@media (min-width: 460px) and (max-width: 620px) {
+  .all-brands-container .brands-heading {
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 27px;
+    font-weight: 900;
+    margin-left: 15px;
+    position: relative;
+  }
+  .all-brands-container .brands-heading:after {
+    content: "";
+    background-color: #2874F0;
+    padding: 3px;
+    width: 148px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 38px;
+  }
+  .all-brands-container .all-brands {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 15px;
+    row-gap: 10px;
+  }
+  .all-brands-container .all-brands .brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    align-self: center;
+    margin: 0 auto;
+    height: 160px;
+    padding: 7px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .all-brands-container .all-brands .brand-logo img {
+    width: 170px;
+  }
+  .all-brands-container .all-brands .brand-logo:hover {
+    background-color: #fff;
+  }
+}
+@media (min-width: 620px) and (max-width: 800px) {
+  .all-brands-container .brands-heading {
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 27px;
+    font-weight: 900;
+    margin-left: 15px;
+    position: relative;
+  }
+  .all-brands-container .brands-heading:after {
+    content: "";
+    background-color: #2874F0;
+    padding: 3px;
+    width: 148px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 38px;
+  }
+  .all-brands-container .all-brands {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 15px;
+    row-gap: 10px;
+  }
+  .all-brands-container .all-brands .brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    align-self: center;
+    margin: 0 auto;
+    height: 160px;
+    padding: 7px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .all-brands-container .all-brands .brand-logo img {
+    width: 170px;
+  }
+  .all-brands-container .all-brands .brand-logo:hover {
+    background-color: #fff;
+  }
 }/*# sourceMappingURL=Brands.css.map */
