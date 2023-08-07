@@ -110,14 +110,17 @@
     transition: 0.3s ease-in-out;
   }
 }
-@media (min-width: 460px) and (max-width: 800px) {
+@media (min-width: 460px) {
   .products-carousel {
     margin: 15px 0;
+    max-width: 1000px;
+    margin: 0 auto;
   }
   .products-carousel .scrollDiv {
-    padding: 10px 0 10px 10px;
+    padding: 10px 0 10px 12px;
     display: flex;
     align-items: center;
+    position: relative;
   }
   .products-carousel .scrollDiv .itemsContainer {
     width: 100%;

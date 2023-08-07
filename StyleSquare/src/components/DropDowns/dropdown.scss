@@ -5,7 +5,9 @@
         background-color: #fff;
         border-bottom: 1px solid gray;
 
-        .dropdown-menu{
+        .dropdowns-menus{
+            display: flex;
+            .dropdown-menu{
             display: flex;
             align-items: center;
             padding: 10px 10px;
@@ -48,6 +50,9 @@
                 }
             }
         }
+        }
+
+        
     }
 }
 
@@ -58,7 +63,9 @@
         background-color: #fff;
         border-bottom: 1px solid gray;
 
-        .dropdown-menu{
+        .dropdowns-menus{
+            display: flex;
+            .dropdown-menu{
             display: flex;
             align-items: center;
             padding: 13px 10px;
@@ -106,6 +113,77 @@
                     }
                 }
             }
+        }
+        }
+
+        
+    }
+}
+
+@media (min-width:800px){
+    .dropdowns-container{
+        display: flex;
+        width: 100%;
+        background-color: #fff;
+        border-bottom: 1px solid gray;
+
+        .dropdowns-menus{
+            display: flex;
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            
+            .dropdown-menu{
+            display: flex;
+            align-items: center;
+            padding: 13px 10px;
+            column-gap: 3px;
+            cursor: pointer;
+            h3{
+                font-size: 1.22rem;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            .menu-sections-container{
+                display: none;
+            }
+            .down-arrow{
+                cursor: pointer;
+            }
+            
+            &:hover{
+                .down-arrow{
+                    font-weight: 900;
+                    transform: rotate(180deg);
+                    cursor: pointer;
+                }
+                .menu-sections-container{
+                    display: flex;
+                    position: absolute;
+                    top: 156px;
+                    flex-direction: column;
+                    font-size: 19px;
+                    font-weight: 600;
+                    box-shadow: 0 0 8px rgba(0,0,0,0.78);
+                    border-radius: 0 10px 10px 10px;
+                    z-index: 200;
+                    background-color: #fff;
+    
+                    div{
+                        padding: 10px 70px 10px 10px;
+                        background-color: #fff;
+                        cursor: pointer;
+    
+                        &:hover{
+                            background-color: #dfdada6a;
+                        }
+                    }
+                }
+            }
+        }
+
+        
         }
     }
 }

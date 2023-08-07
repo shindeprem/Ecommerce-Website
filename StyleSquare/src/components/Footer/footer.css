@@ -1,52 +1,55 @@
 @media screen and (max-width: 460px) {
   .footer-section {
+    background-color: #2874F0;
+  }
+  .footer-section .footer-div {
     padding: 25px 15px 35px;
     background-color: #2874F0;
     display: grid;
     grid-template-areas: "email email" "socials socials" "checkout categories";
     row-gap: 1.3rem;
   }
-  .footer-section div {
+  .footer-section .footer-div div {
     font-size: 18px;
     font-weight: 600;
     color: rgba(243, 242, 242, 0.7411764706);
   }
-  .footer-section div:hover {
+  .footer-section .footer-div div:hover {
     color: #fff;
   }
-  .footer-section .to-pages {
+  .footer-section .footer-div .to-pages {
     grid-area: checkout;
   }
-  .footer-section .to-pages h2 {
+  .footer-section .footer-div .to-pages h2 {
     font-size: 18px;
     font-weight: 900;
     margin-bottom: 0.6rem;
     color: white;
   }
-  .footer-section .to-pages div {
+  .footer-section .footer-div .to-pages div {
     width: -moz-max-content;
     width: max-content;
   }
-  .footer-section .to-pages div:hover {
+  .footer-section .footer-div .to-pages div:hover {
     text-shadow: 0 0 8px #00ffff;
   }
-  .footer-section .category-sections {
+  .footer-section .footer-div .category-sections {
     grid-area: categories;
   }
-  .footer-section .category-sections h2 {
+  .footer-section .footer-div .category-sections h2 {
     font-size: 18px;
     margin-bottom: 0.6rem;
     font-weight: 900;
     color: white;
   }
-  .footer-section .category-sections div {
+  .footer-section .footer-div .category-sections div {
     width: -moz-max-content;
     width: max-content;
   }
-  .footer-section .category-sections div:hover {
+  .footer-section .footer-div .category-sections div:hover {
     text-shadow: 0 0 8px #00ffff;
   }
-  .footer-section .all-socials {
+  .footer-section .footer-div .all-socials {
     display: flex;
     -moz-column-gap: 0.9rem;
          column-gap: 0.9rem;
@@ -57,30 +60,30 @@
     grid-area: socials;
     align-items: center;
   }
-  .footer-section .all-socials .facebook-container {
+  .footer-section .footer-div .all-socials .facebook-container {
     font-size: 24px;
     width: -moz-max-content;
     width: max-content;
     display: flex;
   }
-  .footer-section .all-socials .instagram-container {
+  .footer-section .footer-div .all-socials .instagram-container {
     font-size: 24px;
     width: -moz-max-content;
     width: max-content;
     display: flex;
   }
-  .footer-section .subscribe-for-deals {
+  .footer-section .footer-div .subscribe-for-deals {
     grid-area: email;
     width: 100%;
     overflow: hidden;
   }
-  .footer-section .subscribe-for-deals form {
+  .footer-section .footer-div .subscribe-for-deals form {
     display: flex;
     max-width: 400px;
     -moz-column-gap: 1rem;
          column-gap: 1rem;
   }
-  .footer-section .subscribe-for-deals form input {
+  .footer-section .footer-div .subscribe-for-deals form input {
     padding: 10px 0;
     border: none;
     outline: none;
@@ -95,15 +98,15 @@
          column-gap: 1rem;
     font-size: 18px;
   }
-  .footer-section .subscribe-for-deals form input::-moz-placeholder {
+  .footer-section .footer-div .subscribe-for-deals form input::-moz-placeholder {
     color: white;
     font-size: 17px;
   }
-  .footer-section .subscribe-for-deals form input::placeholder {
+  .footer-section .footer-div .subscribe-for-deals form input::placeholder {
     color: white;
     font-size: 17px;
   }
-  .footer-section .subscribe-for-deals form button {
+  .footer-section .footer-div .subscribe-for-deals form button {
     padding: 13px 15px;
     border-radius: 15px;
     background-color: #000;
@@ -223,6 +226,147 @@
     -moz-column-gap: 1rem;
          column-gap: 1rem;
     font-size: 20px;
+  }
+  .footer-section .footer-div .subscribe-for-deals form input::-moz-placeholder {
+    color: white;
+    font-size: 18px;
+  }
+  .footer-section .footer-div .subscribe-for-deals form input::placeholder {
+    color: white;
+    font-size: 18px;
+  }
+  .footer-section .footer-div .subscribe-for-deals form button {
+    padding: 13px 15px;
+    border-radius: 15px;
+    background-color: #000;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+@media (min-width: 800px) {
+  .footer-section {
+    width: 100%;
+    background-color: #2874F0;
+  }
+  .footer-section .footer-div {
+    padding: 25px 15px 40px;
+    margin: 0 auto;
+    background-color: #2874F0;
+    max-width: 750px;
+    width: -moz-max-content;
+    width: max-content;
+    display: grid;
+    grid-template-areas: "email email" "socials socials" "checkout categories";
+    row-gap: 1.3rem;
+  }
+  .footer-section .footer-div div {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(243, 242, 242, 0.7411764706);
+  }
+  .footer-section .footer-div div:hover {
+    color: #fff;
+  }
+  .footer-section .footer-div .to-pages {
+    grid-area: checkout;
+  }
+  .footer-section .footer-div .to-pages h2 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 0.6rem;
+    color: white;
+    text-align: center;
+  }
+  .footer-section .footer-div .to-pages div {
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+  }
+  .footer-section .footer-div .to-pages div:hover {
+    text-shadow: 0 0 8px #00ffff;
+  }
+  .footer-section .footer-div .category-sections {
+    grid-area: categories;
+  }
+  .footer-section .footer-div .category-sections h2 {
+    font-size: 20px;
+    margin-bottom: 0.6rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+  }
+  .footer-section .footer-div .category-sections div {
+    font-size: 20px;
+    cursor: pointer;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+  }
+  .footer-section .footer-div .category-sections div:hover {
+    text-shadow: 0 0 8px #00ffff;
+  }
+  .footer-section .footer-div .all-socials {
+    display: flex;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    width: -moz-max-content;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-area: socials;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .footer-section .footer-div .all-socials .facebook-container {
+    font-size: 28px;
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    cursor: pointer;
+    color: white;
+  }
+  .footer-section .footer-div .all-socials .instagram-container {
+    font-size: 28px;
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    cursor: pointer;
+    color: white;
+  }
+  .footer-section .footer-div .subscribe-for-deals {
+    grid-area: email;
+    width: 100%;
+    overflow: hidden;
+    width: 700px;
+  }
+  .footer-section .footer-div .subscribe-for-deals form {
+    display: flex;
+    max-width: 560px;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    align-self: center;
+    margin: 0 auto;
+  }
+  .footer-section .footer-div .subscribe-for-deals form input {
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    border-bottom: 1px solid;
+    flex: 1;
+    color: white;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    font-size: 19px;
   }
   .footer-section .footer-div .subscribe-for-deals form input::-moz-placeholder {
     color: white;

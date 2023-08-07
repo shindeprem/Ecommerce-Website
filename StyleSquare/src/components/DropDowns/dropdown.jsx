@@ -6,7 +6,8 @@ const DropDownMenu =()=>{
     return(
     <>
         <div className="dropdowns-container">
-            <div className="womens-section dropdown-menu">
+            <div className="dropdowns-menus">
+                <div className="womens-section dropdown-menu">
                 <h3>Women</h3>
                 <MdKeyboardArrowDown className="down-arrow"/>
 
@@ -47,6 +48,9 @@ const DropDownMenu =()=>{
                     <div className="jackets">Jackets</div>
                 </div>
             </div>
+            </div>
+            
+            
         </div>
     </>
     )

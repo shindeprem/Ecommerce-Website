@@ -18,6 +18,9 @@
   .ad {
     width: 100%;
   }
+  .carousel-root {
+    border: 1px solid;
+  }
   .carousel {
     width: 100px;
     margin: 0 auto;
@@ -39,7 +42,34 @@
     margin: 0 auto;
   }
   .carousel ul li img {
-    height: 450px;
+    height: 475px;
+  }
+  .carousel .thumbs-wrapper {
+    display: none;
+  }
+  .carousel .slide.selected {
+    opacity: 1;
+    width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .ad {
+    width: 100%;
+  }
+  .carousel-root {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .carousel {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-self: center;
+  }
+  .carousel ul li img {
+    height: 500px;
+    max-width: 1000px;
   }
   .carousel .thumbs-wrapper {
     display: none;
