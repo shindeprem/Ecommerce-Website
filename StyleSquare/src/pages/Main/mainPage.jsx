@@ -11,7 +11,7 @@ const MainPage =()=>{
 
     return(
     <>
-    <Header/>
+    {/* <Header/> */}
     <CarouselHeader/>
     <ProductsCarousel category='shirt'/>
     <ProductsCarousel category='saree'/>
@@ -21,8 +21,8 @@ const MainPage =()=>{
     <ProductsCarousel category='kids'/>
     {/* Add another product lists */}
     <ProductsCarousel category='accessories'/>
-    {/* Footer */}
-    <Footer/>
+    
+    {/* <Footer/> */}
     </>
     )
 }
