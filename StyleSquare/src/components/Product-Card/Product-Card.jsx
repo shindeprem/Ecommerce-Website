@@ -3,7 +3,7 @@ import './Product-Card.css'
 import {BsBag} from 'react-icons/bs'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 
-const ProductCard = ()=>{
+const ProductCard = (product)=>{
     return(
         <div className="product-card">
             <div className="img-container">
