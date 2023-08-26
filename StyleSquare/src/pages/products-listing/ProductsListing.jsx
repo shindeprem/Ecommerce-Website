@@ -1,5 +1,6 @@
 import React from "react";
 import ProductCard from '../../components/Product-Card/Product-Card'
+import './ProductsListing.css'
 
 const ProductListing = ()=>{
     const ProductsList = [
@@ -9,44 +10,44 @@ const ProductListing = ()=>{
           price: 29.99,
           size: "M",
           color: "Blue",
-          image: shirt1,
+        //   image: shirt1,
           description: "A stylish blue striped shirt perfect for any occasion.",
           stock: 10,
           category:"shirt"
         },
-    //     {
-    //       id: 2,
-    //       name: "White Button-Up Shirt",
-    //       price: 34.99,
-    //       size: "L",
-    //       color: "White",
-    //       image: shirt2,
-    //       description: "A classic white button-up shirt for a clean and sophisticated look.",
-    //       stock: 5,
-    //       category:"shirt"
-    //     },
-    //     {
-    //       id: 3,
-    //       name: "Red Plaid Shirt",
-    //       price: 27.99,
-    //       size: "XL",
-    //       color: "Red",
-    //       image: shirt3,
-    //       description: "A trendy red plaid shirt for a casual yet stylish outfit.",
-    //       stock: 15,
-    //       category:"shirt"
-    //     },
-    //     {
-    //       id: 4,
-    //       name: "Black V-Neck Shirt",
-    //       price: 21.99,
-    //       size: "S",
-    //       color: "Black",
-    //       image: "black_v_neck_shirt.jpg",
-    //       description: "A versatile black V-neck shirt suitable for various occasions.",
-    //       stock: 8,
-    //       category:"shirt"
-    //     },
+        {
+          id: 2,
+          name: "White Button-Up Shirt",
+          price: 34.99,
+          size: "L",
+          color: "White",
+        //   image: shirt2,
+          description: "A classic white button-up shirt for a clean and sophisticated look.",
+          stock: 5,
+          category:"shirt"
+        },
+        {
+          id: 3,
+          name: "Red Plaid Shirt",
+          price: 27.99,
+          size: "XL",
+          color: "Red",
+        //   image: shirt3,
+          description: "A trendy red plaid shirt for a casual yet stylish outfit.",
+          stock: 15,
+          category:"shirt"
+        },
+        {
+          id: 4,
+          name: "Black V-Neck Shirt",
+          price: 21.99,
+          size: "S",
+          color: "Black",
+        //   image: "black_v_neck_shirt.jpg",
+          description: "A versatile black V-neck shirt suitable for various occasions.",
+          stock: 8,
+          category:"shirt"
+        },
     //     {
     //       id: 5,
     //       name: "Green Polo Shirt",
@@ -345,7 +346,7 @@ const ProductListing = ()=>{
             <div className="all-products">
                 {ProductsList.map((product,index)=>{
                     return(
-                        <ProductCard/>
+                        <ProductCard className='product-card' key={index} {...product}/>
                     )
                 })}
             </div>

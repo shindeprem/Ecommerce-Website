@@ -1,1 +1,28 @@
-/*# sourceMappingURL=ProductsListing.css.map */
+.product-listing {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.product-listing .all-products {
+  padding: 15px 0;
+  grid-template-columns: repeat(1, 1fr);
+  display: grid;
+}
+.product-listing .all-products .product-card {
+  width: 80%;
+}
+
+@media screen and (min-width: 860px) {
+  .product-listing {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .product-listing .all-products {
+    padding: 15px 0;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 1rem;
+  }
+  .product-listing .all-products .product-card {
+    width: 100%;
+  }
+}/*# sourceMappingURL=ProductsListing.css.map */
