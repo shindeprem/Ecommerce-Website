@@ -1,1 +1,23 @@
-/*# sourceMappingURL=filter.css.map */
+.filters-sidebar .filters-form-container .filters-section .colors-section {
+  padding: 10px 12px;
+}
+.filters-sidebar .filters-form-container .filters-section .colors-section .colors-filter-heading {
+  font-size: 22px;
+  font-weight: 700;
+}
+.filters-sidebar .filters-form-container .filters-section .colors-section .colors-selection-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.filters-sidebar .filters-form-container .filters-section .colors-section .colors-selection-filters .color-container {
+  padding: 5px 13.5px;
+  font-size: 18px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+}/*# sourceMappingURL=filter.css.map */
