@@ -12,10 +12,29 @@
     }
 }
 
-@media screen and (min-width:860px) {
+@media screen and (min-width:560px) {
+    .product-listing{
+        max-width: 1200px;
+        padding: 0 10px;
+        margin: 0 auto;
+        .all-products{
+            padding: 15px 0;
+            grid-template-columns: repeat(2,1fr);
+            display: grid;
+            gap: 1rem;
+    
+            .product-card{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:900px) {
     .product-listing{
         max-width: 1200px;
         margin: 0 auto;
+        padding: 0 10px;
         .all-products{
             padding: 15px 0;
             grid-template-columns: repeat(3,1fr);
