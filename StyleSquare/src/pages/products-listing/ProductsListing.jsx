@@ -1,6 +1,7 @@
 import React from "react";
 import ProductCard from '../../components/Product-Card/Product-Card'
 import './ProductsListing.css'
+import Filters from "../../components/Filters/filters";
 
 const ProductListing = ()=>{
     const ProductsList = [
