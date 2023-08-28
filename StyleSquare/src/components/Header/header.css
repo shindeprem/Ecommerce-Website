@@ -302,7 +302,7 @@
     flex-direction: column;
     row-gap: 0.6rem;
     margin-bottom: 6px;
-    max-width: 1000px;
+    max-width: 1200px;
   }
   .header-section .header-container .upper-section-header {
     display: flex;
