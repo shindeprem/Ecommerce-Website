@@ -77,4 +77,35 @@
   font-weight: 500;
   outline: none;
   cursor: pointer;
+}
+.filters-sidebar .filters-form-container .filters-section .category-filters {
+  padding: 0 10px;
+}
+.filters-sidebar .filters-form-container .filters-section .category-filters .category-filter-heading-container .category-filter-heading {
+  font-size: 18px;
+  font-weight: 700;
+}
+.filters-sidebar .filters-form-container .filters-section .category-filters .category-filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.filters-sidebar .filters-form-container .filters-section .category-filters .category-filter-container .category-container {
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  padding: 2px 7px;
+  border: 1px solid white;
+}
+.filters-sidebar .filters-form-container .filters-section .category-filters .category-filter-container .category-container:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.filters-sidebar .filters-form-container .filters-section .category-filters .category-filter-container .selected {
+  border: 1px solid #00ffff;
 }/*# sourceMappingURL=filter.css.map */

@@ -40,12 +40,22 @@ const Filters = () =>{
         // setSortedArr(sortedArr)
     }
 
+    const categories = ['kids','women','mens','jeans','shirts','saree','hoodie']
+    const [selectedCategories,setSelectedCategories] = useState([])
+    const handleCategoryFilter = (category)=>{
+        if (selectedCategories.includes(category)) {
+            setSelectedCategories((prevSelectedCategories) => prevSelectedCategories.filter((selectedCategory) => selectedCategory !== category));
+        } else{
+            setSelectedCategories([...selectedCategories, category]);
+        }
+    }
     
     useEffect(()=>{
         console.log(selectedColors);
         console.log(highestRate);
+        console.log(selectedCategories);
         //console.log(highestRate);
-    },[selectedColors,highestRate])
+    },[selectedColors,highestRate,selectedCategories])
     
     return(
         // filter, sorting, pagination
@@ -109,11 +119,25 @@ const Filters = () =>{
                         </div>
                     </div>
                     <br />
-                    <div className="brands-filters">
+                    <div className="category-filters">
+                        <div className="category-filter-heading-container">
+                            <h2 className="category-filter-heading">
+                                Filter by category
+                            </h2>
+                        </div>
 
+                        <div className="category-filter-container">
+                            {categories.map((category)=>{
+                                return(
+                                    <div className={`${selectedCategories.includes(category)?'selected':''} category-container`}
+                                    onClick={()=>{handleCategoryFilter(category)}}
+                                    >
+                                        {category.toLocaleUpperCase()}
+                                    </div>
+                                )
+                            })}
+                        </div>
                     </div>
-                    <br />
-                    <div className="category-filters"></div>
                 </div>
             </form>
         </div>
