@@ -2,8 +2,8 @@
   padding: 10px 12px;
 }
 .filters-sidebar .filters-form-container .filters-section .colors-section .colors-filter-heading {
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 900;
 }
 .filters-sidebar .filters-form-container .filters-section .colors-section .colors-selection-filters {
   display: flex;
@@ -21,7 +21,31 @@
   border-radius: 50%;
   color: white;
   border: 1px solid white;
+  cursor: pointer;
 }
 .filters-sidebar .filters-form-container .filters-section .colors-section .colors-selection-filters .selected {
   border: 1px solid black;
+}
+.filters-sidebar .filters-form-container .filters-section .price-filter {
+  padding: 0 10px;
+}
+.filters-sidebar .filters-form-container .filters-section .price-filter .filter-by-price .price-filter-heading {
+  font-size: 20px;
+  margin-bottom: 0.7rem;
+}
+.filters-sidebar .filters-form-container .filters-section .price-filter .filter-by-price .range-filter-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  row-gap: 8px;
+}
+.filters-sidebar .filters-form-container .filters-section .price-filter .filter-by-price .range-filter-container .labels-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+.filters-sidebar .filters-form-container .filters-section .price-filter .filter-by-price .range-filter-container .labels-container label {
+  font-weight: 900;
+  font-size: 18px;
 }/*# sourceMappingURL=filter.css.map */

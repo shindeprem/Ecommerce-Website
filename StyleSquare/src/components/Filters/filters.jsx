@@ -15,12 +15,18 @@ const Filters = () =>{
         }
     }
     
+    const [highestRate,setHighestRate] = useState(null)
+    const handlePriceChange =(e)=>{
+        const {value} = e.target;
+        setHighestRate(value)
+    }
 
-    useEffect(()=>{
-            console.log(selectedColors);
-    },[selectedColors])
     
-
+    useEffect(()=>{
+        console.log(selectedColors);
+        console.log(highestRate);
+        //console.log(highestRate);
+    },[selectedColors,highestRate])
     
     return(
         // filter, sorting, pagination
@@ -45,7 +51,22 @@ const Filters = () =>{
                             })}
                         </div>
                     </div>
-                    <div className="price-filter"></div>
+                    <div className="price-filter">
+                        <div className="filter-by-price">
+                            <h2 className="price-filter-heading">
+                                Filter by price
+                            </h2>
+                            <div className="range-filter-container">
+                              <input type="range" name="price-range" id="priceRange" min={0} max={1000} onChange={handlePriceChange}/>
+                              <div className="labels-container">
+                                <label htmlFor="priceRange" className="min-price-label">$0</label> 
+                                <label htmlFor="priceRange">$1000</label> 
+                              </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
                     <div className="sorting-filter"></div>
                     <div className="brands-filters"></div>
                     <div className="category-filters"></div>
