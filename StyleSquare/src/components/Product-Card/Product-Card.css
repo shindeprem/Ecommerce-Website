@@ -123,7 +123,7 @@
   .product-card .img-container {
     overflow: hidden;
     border-radius: 5px 5px 0 0;
-    height: 240px;
+    height: 250px;
     width: 100%;
   }
   .product-card .img-container img {
@@ -203,13 +203,13 @@
 }
 @media screen and (min-width: 460px) {
   .product-card {
-    width: 80%;
-    max-width: 350px;
+    width: 100%;
+    max-width: 390px;
   }
   .product-card .img-container {
     overflow: hidden;
     border-radius: 5px 5px 0 0;
-    height: 240px;
+    height: 230px;
     width: 100%;
   }
   .product-card .img-container img {
