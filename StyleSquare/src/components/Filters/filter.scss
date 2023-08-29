@@ -3,6 +3,7 @@
         .filters-section{
             .colors-section{
                 padding: 10px 12px;
+                
                 .colors-filter-heading{
                     font-size: 22px;
                     font-weight: 700;
@@ -14,7 +15,7 @@
                 margin: 1rem 0;
                 
                 .color-container{
-                    padding: 5px 13.5px;
+                    padding: 5px 14.5px;
                     font-size: 18px;
                     font-weight: 900;
                     display: flex;
@@ -22,6 +23,11 @@
                     justify-content: center;
                     border-radius: 50%;
                     color: white;
+                    border: 1px solid white;
+                }
+
+                .selected{
+                    border: 1px solid black;
                 }
             }
             }  
