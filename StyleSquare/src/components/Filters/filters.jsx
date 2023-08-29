@@ -15,7 +15,7 @@ const Filters = () =>{
         }
     }
     
-    const [highestRate,setHighestRate] = useState(null)
+    const [highestRate,setHighestRate] = useState(1000)
     const handlePriceChange =(e)=>{
         const {value} = e.target;
         setHighestRate(value)
@@ -70,13 +70,16 @@ const Filters = () =>{
                             })}
                         </div>
                     </div>
+                    <br/>
                     <div className="price-filter">
                         <div className="filter-by-price">
                             <h2 className="price-filter-heading">
                                 Filter by price
                             </h2>
                             <div className="range-filter-container">
-                              <input type="range" name="price-range" id="priceRange" min={0} max={1000} onChange={handlePriceChange}/>
+                              <input type="range" name="price-range" id="priceRange" min={0} max={1000} onChange={handlePriceChange}
+                              value={highestRate}
+                              />
                               <div className="labels-container">
                                 <label htmlFor="priceRange" className="min-price-label">$0</label> 
                                 <label htmlFor="priceRange">$1000</label> 
@@ -86,6 +89,7 @@ const Filters = () =>{
                             
                         </div>
                     </div>
+                    <br />
                     <div className="sorting-filter">
                         <div className="sort-heading-container">
                             <h2 className="sorting-heading">
@@ -104,7 +108,11 @@ const Filters = () =>{
                             </div>
                         </div>
                     </div>
-                    <div className="brands-filters"></div>
+                    <br />
+                    <div className="brands-filters">
+
+                    </div>
+                    <br />
                     <div className="category-filters"></div>
                 </div>
             </form>
