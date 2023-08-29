@@ -21,6 +21,25 @@ const Filters = () =>{
         setHighestRate(value)
     }
 
+    const [selectedSorting,setSelectedSorting] = useState('')
+    // const [sortedArr,setSortedArr] = useState(availableClothesArr)
+    const handleSort = (e)=>{
+        const {value} = e.target;
+        setSelectedSorting(value)
+
+        // const sortedArr = [...clothesArr].sort((a,b)=>{
+        //     if(selectedSorting==='high-to-low'){
+        //         return a.price - b.price;
+        //     }else if(selectedSorting==='low-to-high'){
+        //         return b.price - a.price;
+        //     }else{
+        //         // do nothing
+        //     }
+        // })
+
+        // setSortedArr(sortedArr)
+    }
+
     
     useEffect(()=>{
         console.log(selectedColors);
@@ -67,7 +86,24 @@ const Filters = () =>{
                             
                         </div>
                     </div>
-                    <div className="sorting-filter"></div>
+                    <div className="sorting-filter">
+                        <div className="sort-heading-container">
+                            <h2 className="sorting-heading">
+                                Sort by
+                            </h2>
+                            <div className="sorting-container">
+                                <select name="sorting-selection" id="sortingSelections" className="sort-by-ranges" style={{padding:'10px 20',fontSize:'18px',borderRadius:'10px',width:'100%',maxWidth:'200px'}}
+                                onChange={handleSort}
+                                >
+                                    <option value="select-range">Price Range</option>
+
+                                    <option value="high-to-low">High to Low</option>
+
+                                    <option value="low-to-high" className="low-to-high">Low to High</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                     <div className="brands-filters"></div>
                     <div className="category-filters"></div>
                 </div>
