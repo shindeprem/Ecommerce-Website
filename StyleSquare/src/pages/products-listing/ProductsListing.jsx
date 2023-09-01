@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { createContext, useState } from "react";
 import ProductCard from '../../components/Product-Card/Product-Card'
 import './ProductsListing.css'
 import Filters from "../../components/Filters/filters";
 import {AiOutlineRight} from 'react-icons/ai'
+
 
 const ProductListing = ()=>{
     const ProductsList = [
@@ -347,6 +348,7 @@ const ProductListing = ()=>{
     const handleFilter = ()=>{
       setIsOpenFilter((isOpenFilter)=>!isOpenFilter)
     }
+
     return(
       
         <div className="product-listing" style={{height:isOpenFilter?'600px':''}}>
@@ -357,11 +359,12 @@ const ProductListing = ()=>{
               
             </div>
             <div className={`${isOpenFilter?'open-filter':'close-filter'} filter-sidebar`}>
-              <Filters className="all-filters"/>
+              <Filters className="all-filters" isOpen={isOpenFilter} setIsOpen={setIsOpenFilter}/>
             </div>
             <div className="all-products">
                 {ProductsList.map((product,index)=>{
                     return(
+                      
                         <ProductCard className={` product-card`} key={index}  {...product}/>
                     )
                 })}

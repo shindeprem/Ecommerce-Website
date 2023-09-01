@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import './filter.css'
 import { useContext } from "react";
+import {AiFillCloseCircle} from 'react-icons/ai'
 
 
-const Filters = () =>{
+const Filters = ({isOpen,setIsOpen}) =>{
 
     const selectColors = ['red','pink','yellow','gray','black','orange']
     const [selectedColors,setSelectedColors] = useState([])
@@ -60,6 +61,11 @@ const Filters = () =>{
     return(
         // filter, sorting, pagination
         <div className="filters-sidebar">
+            <div className="close-filter-sidebar">
+                <h2 className="close-filter-heading" onClick={()=>{setIsOpen(false)}}>
+                    Close<AiFillCloseCircle className="left-arrow"/>
+                </h2>
+            </div>
             <form className="filters-form-container">
                 <div className="filters-section">
                     <div className="colors-section">

@@ -1,8 +1,24 @@
 .filters-sidebar {
   padding: 5px 0 15px 0;
 }
+.filters-sidebar .close-filter-sidebar {
+  justify-content: end;
+  padding: 5px 15px 0;
+  display: flex;
+}
+.filters-sidebar .close-filter-sidebar .close-filter-heading {
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  cursor: pointer;
+}
+.filters-sidebar .close-filter-sidebar .close-filter-heading .left-arrow {
+  font-size: 24px;
+}
 .filters-sidebar .filters-form-container .filters-section .colors-section {
-  padding: 10px 12px 0;
+  padding: 5px 12px 0;
 }
 .filters-sidebar .filters-form-container .filters-section .colors-section .colors-filter-heading {
   font-size: 18px;
@@ -108,4 +124,11 @@
 }
 .filters-sidebar .filters-form-container .filters-section .category-filters .category-filter-container .selected {
   border: 1px solid #00ffff;
+}
+
+@media screen and (min-width: 560px) {
+  .close-filter-sidebar {
+    display: none;
+    visibility: hidden;
+  }
 }/*# sourceMappingURL=filter.css.map */

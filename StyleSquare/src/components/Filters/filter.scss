@@ -1,9 +1,26 @@
 .filters-sidebar{
     padding: 5px 0 15px 0;
+    .close-filter-sidebar{
+        justify-content: end;
+        padding: 5px 15px 0;
+        display: flex;
+        .close-filter-heading{
+            font-size: 19px;
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+
+            .left-arrow{
+                font-size: 24px;
+            }
+
+            cursor: pointer;
+        }
+    }
     .filters-form-container{
         .filters-section{
             .colors-section{
-                padding: 10px 12px 0;
+                padding: 5px 12px 0;
                 
                 .colors-filter-heading{
                     font-size: 18px;
@@ -138,5 +155,12 @@
                 }
             }
         }
+    }
+}
+
+@media screen and  (min-width:560px){
+    .close-filter-sidebar{
+        display: none;
+        visibility: hidden;
     }
 }
