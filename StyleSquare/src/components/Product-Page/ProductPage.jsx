@@ -18,6 +18,27 @@ const ProductPage = ()=>{
         setMainImg(img)
     }
 
+    const colors = [
+        'black',
+        'blue',
+    ]
+
+    const sizes = [
+        25,26,27,28,29,30,31,32,33,34
+    ]
+
+    const details = [
+        'Style : Auty Jeans','Fit : Relaxed Fit','Fabric : Stretch Denim.','Length : Regular'
+    ]
+
+    const [selectedSize,setSelectedSize]=  useState('')
+
+    const [isAddedToCart,setIsAddedToCart] = useState(false)
+
+    const handleAddToCart = ()=>{
+        setIsAddedToCart((isAddedToCart)=>!isAddedToCart)
+    }
+
     return(
         <div className="product-page-container">
             <div className="product-img-carousel">
@@ -37,7 +58,80 @@ const ProductPage = ()=>{
                 </div>
             </div>
             <div className="product-info-container">
+                <div className="product-name-heading-container">
+                    <h1 className="product-name-heading">
+                        Blue Auty Jeans - Scalar Pants Auty brand
+                    </h1>
+                </div>
+                <div className="product-price-container">
+                    <div className="price-after-sale">
+                        $499
+                    </div> 
+                    <div className="price-before-sale">
+                        $999
+                    </div>
+                </div>
+                <div className="product-ratings-container">
 
+                </div>
+                {/* <div className="product-colors-filter-container">
+                    {colors.map((color)=>{
+                        return(
+                            
+                               <div className="color-container" style={{backgroundColor:color}}>
+
+                                </div> 
+                            
+                        )
+                    })}
+                </div> */}
+                <div className="product-sizes-container">
+                    <div className="product-sizes-heading">
+                        Available Sizes
+                    </div>
+                    <div className="product-available-sizes">
+                        {sizes.map((size)=>{
+                            return(
+                                <div className={`single-size-container ${selectedSize==size?'selected':''}`} onClick={()=>setSelectedSize(size)}>
+                                    {size}
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+
+                <div className="product-details-desc">
+                    <div className="product-desc">
+                        <h3 className="product-desc-heading">
+                            Product Description
+                        </h3>
+                        <div className="product-desc-content">
+                            Wanna update your everyday staples? Jump on the silhouette of the season with these Slate Blue Baggy Fit Rigid jeans our latest collection. Featuring a relaxed fit across the waist and fitting loosely down the legs for easy movement.
+                        </div>
+                        
+                    </div>
+                    <div className="product-details">
+                        <h3 className="product-detail-heading">
+                            Product Details
+                        </h3>
+                        <ul className="product-details-lists">
+                            {details.map((detail)=>{
+                                return(
+                                    <li className="product-dets">
+                                       {detail}
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                    </div>
+                </div>
+                <div className="cart-and-buy-btn">
+                    <button className="add-to-cart-btn" onClick={
+                        handleAddToCart
+                    } style={isAddedToCart?{backgroundColor:'black',color:'white'}:{backgroundColor:'black',color:'white'}}>
+                        {isAddedToCart?'Added To Cart':'Add to Cart'}
+                    </button>
+                </div>
             </div>
         </div>
     )
