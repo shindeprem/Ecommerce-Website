@@ -87,7 +87,7 @@ const ProductPage = ()=>{
                 </div> */}
                 <div className="product-sizes-container">
                     <div className="product-sizes-heading">
-                        Available Sizes
+                        Select Size
                     </div>
                     <div className="product-available-sizes">
                         {sizes.map((size)=>{
