@@ -187,6 +187,9 @@
     grid-area: product-img-carousel;
     margin-right: 1rem;
   }
+  .product-page-container .product-img-carousel::-webkit-scrollbar {
+    display: none;
+  }
   .product-page-container .product-img-carousel .img-container {
     -o-object-fit: cover;
        object-fit: cover;

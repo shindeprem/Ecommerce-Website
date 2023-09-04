@@ -206,6 +206,9 @@
             padding: 7px 0;
             grid-area: product-img-carousel;
             margin-right: 1rem;
+            &::-webkit-scrollbar{
+                display: none;
+            }
             .img-container{
                 object-fit: cover;
                 border-radius: 10px;
