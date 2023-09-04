@@ -121,6 +121,10 @@
     border-radius: 10px;
     border: 1px solid white;
   }
+  .product-page-container .product-info-container .product-sizes-container .product-available-sizes .single-size-container:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
   .product-page-container .product-info-container .product-sizes-container .product-available-sizes .selected {
     border: 1px solid black;
   }
@@ -290,6 +294,10 @@
     border-radius: 10px;
     border: 1px solid white;
     cursor: pointer;
+  }
+  .product-page-container .product-info-container .product-sizes-container .product-available-sizes .single-size-container:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
   }
   .product-page-container .product-info-container .product-sizes-container .product-available-sizes .selected {
     border: 1px solid black;
@@ -470,6 +478,10 @@
     border-radius: 10px;
     border: 1px solid white;
     cursor: pointer;
+  }
+  .product-page-container .product-info-container .product-sizes-container .product-available-sizes .single-size-container:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
   }
   .product-page-container .product-info-container .product-sizes-container .product-available-sizes .selected {
     border: 1px solid black;

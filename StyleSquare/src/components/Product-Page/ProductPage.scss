@@ -127,6 +127,11 @@
                         background-color: rgb(248, 247, 247);
                         border-radius: 10px;
                         border: 1px solid white;
+
+                        &:hover{
+                            transform: scale(1.1);
+                            transition: transform 0.3s ease-in-out;
+                        }
                     }
                     .selected{
                         border: 1px solid black;
@@ -313,6 +318,10 @@
                         border-radius: 10px;
                         border: 1px solid white;
                         cursor: pointer;
+                        &:hover{
+                            transform: scale(1.1);
+                            transition: transform 0.3s ease-in-out;
+                        }
                     }
                     .selected{
                         border: 1px solid black;
@@ -508,6 +517,11 @@
                         border-radius: 10px;
                         border: 1px solid white;
                         cursor: pointer;
+
+                        &:hover{
+                            transform: scale(1.1);
+                            transition: transform 0.3s ease-in-out;
+                        }
                     }
                     .selected{
                         border: 1px solid black;
