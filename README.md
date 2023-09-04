@@ -7,6 +7,6 @@ StyleSquare is a clothing ecommerce website built using MERN.
 - Product card ✅
 - Main page ✅
 - Filter section ✅
-- Single product page (working)
+- Single product page ✅
 - SignIn page
 - Register Page
