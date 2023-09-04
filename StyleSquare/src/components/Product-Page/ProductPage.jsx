@@ -5,6 +5,7 @@ import img4 from '../../assets/images/jeans-1.jpg'
 import img2 from '../../assets/images/jeans-2.jpg'
 import img3 from '../../assets/images/jeans-3.jpg'
 import img1 from '../../assets/images/jeans-4.jpg'
+import ProductsCarousel from "../FetchApiProducts/productsCarousel";
 
 
 const productImg = [img1,img2,img3,img4]
@@ -40,7 +41,8 @@ const ProductPage = ()=>{
     }
 
     return(
-        <div className="product-page-container">
+        <div className="product-page-wrapper">
+        <div className="product-page-container" style={{marginBottom:'1.3rem'}}>
             <div className="product-img-carousel">
                 {productImg.map((img)=>{
                     return(
@@ -133,6 +135,12 @@ const ProductPage = ()=>{
                     </button>
                 </div>
             </div>
+        </div>
+        <div className="more-items-lists">
+            <h2>Checkout More</h2>
+        </div>
+        <ProductsCarousel category='shirt'/>
+        <ProductsCarousel category='accessories'/>
         </div>
     )
 }
