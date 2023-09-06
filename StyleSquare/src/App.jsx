@@ -7,6 +7,7 @@ import ProductsLayout from "./pages/Products-Layout/ProductsLayout";
 import Filters from "./components/Filters/filters";
 import ProductPage from "./components/Product-Page/ProductPage";
 import SignIn from "./components/SignIn/SignIn";
+import SignUp from "./components/SignUp/SignUp";
 
 const App =()=>{
     return(
@@ -18,6 +19,7 @@ const App =()=>{
                 <Route path="product/:id" element={<ProductPage/>}/>
             </Route>
             <Route path="/signin" element={<SignIn/>}/>
+            <Route path="/signup" element={<SignUp/>}/>
         </Routes>
         </>
     )
