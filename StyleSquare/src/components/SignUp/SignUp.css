@@ -1,1 +1,670 @@
-/*# sourceMappingURL=SignUp.css.map */
+.signup-page {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+.signup-page .signup-page-container {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.signup-page .signup-page-container .signup-img-container {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+}
+.signup-page .signup-page-container .signup-img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 300px;
+}
+.signup-page .signup-page-container .signup-inputs-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  padding: 10px 10px;
+}
+.signup-page .signup-page-container .signup-inputs-container .input-header-container {
+  margin: 13px 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+.signup-page .signup-page-container .signup-inputs-container .signup-email-container {
+  width: 100%;
+  padding: 5px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup-page .signup-page-container .signup-inputs-container .signup-email-container .signup-email-input {
+  width: 90%;
+  display: flex;
+  padding: 9px 10px;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+  border-radius: 20px;
+  background-color: #ECECEC;
+}
+.signup-page .signup-page-container .signup-inputs-container .signup-email-container .signup-email-input .user-icon {
+  font-size: 20px;
+  color: black;
+}
+.signup-page .signup-page-container .signup-inputs-container .signup-email-container .signup-email-input input {
+  flex: 1;
+  font-size: 1rem;
+  padding: 2px 5px;
+  border: none;
+  outline: none;
+  background-color: #ECECEC;
+}
+.signup-page .signup-page-container .signup-inputs-container .signup-password-input-container {
+  width: 100%;
+  padding: 5px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7px 0 0;
+}
+.signup-page .signup-page-container .signup-inputs-container .signup-password-input-container .signup-password-input {
+  width: 90%;
+  display: flex;
+  padding: 9px 10px;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+  border-radius: 20px;
+  background-color: #ECECEC;
+}
+.signup-page .signup-page-container .signup-inputs-container .signup-password-input-container .signup-password-input .lock-icon {
+  font-size: 20px;
+  color: black;
+  font-weight: 900;
+}
+.signup-page .signup-page-container .signup-inputs-container .signup-password-input-container .signup-password-input input {
+  flex: 1;
+  font-size: 1rem;
+  padding: 2px 5px;
+  border: none;
+  outline: none;
+  background-color: #ECECEC;
+}
+.signup-page .signup-page-container .signup-inputs-container .signup-confirm-password-container {
+  width: 100%;
+  padding: 5px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7px 0;
+}
+.signup-page .signup-page-container .signup-inputs-container .signup-confirm-password-container .signup-confirm-password-input {
+  width: 90%;
+  display: flex;
+  padding: 9px 10px;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+  border-radius: 20px;
+  background-color: #ECECEC;
+}
+.signup-page .signup-page-container .signup-inputs-container .signup-confirm-password-container .signup-confirm-password-input .lock-icon {
+  font-size: 20px;
+  color: black;
+  font-weight: 900;
+}
+.signup-page .signup-page-container .signup-inputs-container .signup-confirm-password-container .signup-confirm-password-input input {
+  flex: 1;
+  font-size: 1rem;
+  padding: 2px 5px;
+  border: none;
+  outline: none;
+  background-color: #ECECEC;
+}
+.signup-page .signup-page-container .signup-inputs-container .signup-btn-container {
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: center;
+}
+.signup-page .signup-page-container .signup-inputs-container .signup-btn-container .signup-btn {
+  width: 95%;
+  border: none;
+  outline: none;
+  background-color: #051937;
+  font-weight: 500;
+  color: white;
+  padding: 8px 0;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.signup-page .signup-page-container .signup-inputs-container .bottom-border {
+  border: 1px solid;
+  width: 100%;
+  margin-top: 0.7rem;
+}
+.signup-page .signup-page-container .signup-inputs-container .social-media-container {
+  display: flex;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  margin-top: 1.2rem;
+}
+.signup-page .signup-page-container .signup-inputs-container .social-media-container .socials-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 380px) {
+  .signup-page {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+  }
+  .signup-page .signup-page-container {
+    padding: 25px 0;
+    display: flex;
+    width: -moz-max-content;
+    width: max-content;
+    margin: auto;
+    width: 100%;
+  }
+  .signup-page .signup-page-container .signup-img-container {
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: none;
+  }
+  .signup-page .signup-page-container .signup-img-container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 300px;
+  }
+  .signup-page .signup-page-container .signup-inputs-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0 auto;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .input-header-container {
+    margin: 13px 0 20px;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-email-container {
+    width: 100%;
+    padding: 5px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-email-container .signup-email-input {
+    width: 90%;
+    display: flex;
+    padding: 9px 10px;
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 7px;
+         column-gap: 7px;
+    border-radius: 20px;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-email-container .signup-email-input .user-icon {
+    font-size: 20px;
+    color: black;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-email-container .signup-email-input input {
+    flex: 1;
+    font-size: 1rem;
+    padding: 2px 5px;
+    border: none;
+    outline: none;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-password-input-container {
+    width: 100%;
+    padding: 5px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px 0 0;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-password-input-container .signup-password-input {
+    width: 90%;
+    display: flex;
+    padding: 9px 10px;
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 7px;
+         column-gap: 7px;
+    border-radius: 20px;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-password-input-container .signup-password-input .lock-icon {
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-password-input-container .signup-password-input input {
+    flex: 1;
+    font-size: 1rem;
+    padding: 2px 5px;
+    border: none;
+    outline: none;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-confirm-password-container {
+    width: 100%;
+    padding: 5px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px 0;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-confirm-password-container .signup-confirm-password-input {
+    width: 90%;
+    display: flex;
+    padding: 9px 10px;
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 7px;
+         column-gap: 7px;
+    border-radius: 20px;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-confirm-password-container .signup-confirm-password-input .lock-icon {
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-confirm-password-container .signup-confirm-password-input input {
+    flex: 1;
+    font-size: 1rem;
+    padding: 2px 5px;
+    border: none;
+    outline: none;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-btn-container {
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-btn-container .signup-btn {
+    width: 95%;
+    border: none;
+    outline: none;
+    background-color: #051937;
+    font-weight: 500;
+    color: white;
+    padding: 8px 0;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .bottom-border {
+    border: 1px solid;
+    width: 80%;
+    margin-top: 0.7rem;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .social-media-container {
+    display: flex;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    margin-top: 1.2rem;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .social-media-container .socials-icon {
+    font-size: 28px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 380px) and (max-width: 620px) {
+  .signup-page {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+  }
+  .signup-page .signup-page-container {
+    padding: 25px 5px;
+    display: flex;
+    width: -moz-max-content;
+    width: max-content;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .signup-page .signup-page-container .signup-img-container {
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: none;
+  }
+  .signup-page .signup-page-container .signup-img-container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 300px;
+  }
+  .signup-page .signup-page-container .signup-inputs-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    align-items: center;
+    padding: 10px 10px;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .input-header-container {
+    margin: 13px 0 20px;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-email-container {
+    width: 100%;
+    padding: 5px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-email-container .signup-email-input {
+    width: 90%;
+    display: flex;
+    padding: 9px 10px;
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 7px;
+         column-gap: 7px;
+    border-radius: 20px;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-email-container .signup-email-input .user-icon {
+    font-size: 20px;
+    color: black;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-email-container .signup-email-input input {
+    flex: 1;
+    font-size: 1rem;
+    padding: 2px 5px;
+    border: none;
+    outline: none;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-password-input-container {
+    width: 100%;
+    padding: 5px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px 0 0;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-password-input-container .signup-password-input {
+    width: 90%;
+    display: flex;
+    padding: 9px 10px;
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 7px;
+         column-gap: 7px;
+    border-radius: 20px;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-password-input-container .signup-password-input .lock-icon {
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-password-input-container .signup-password-input input {
+    flex: 1;
+    font-size: 1rem;
+    padding: 2px 5px;
+    border: none;
+    outline: none;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-confirm-password-container {
+    width: 100%;
+    padding: 5px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px 0;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-confirm-password-container .signup-confirm-password-input {
+    width: 90%;
+    display: flex;
+    padding: 9px 10px;
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 7px;
+         column-gap: 7px;
+    border-radius: 20px;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-confirm-password-container .signup-confirm-password-input .lock-icon {
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-confirm-password-container .signup-confirm-password-input input {
+    flex: 1;
+    font-size: 1rem;
+    padding: 2px 5px;
+    border: none;
+    outline: none;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-btn-container {
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-btn-container .signup-btn {
+    width: 95%;
+    border: none;
+    outline: none;
+    background-color: #051937;
+    font-weight: 500;
+    color: white;
+    padding: 8px 0;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .bottom-border {
+    border: 1px solid;
+    width: 100%;
+    margin-top: 0.7rem;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .social-media-container {
+    display: flex;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    margin-top: 1.2rem;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .social-media-container .socials-icon {
+    font-size: 28px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 720px) {
+  .signup-page {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+  }
+  .signup-page .signup-page-container {
+    display: flex;
+    width: -moz-max-content;
+    width: max-content;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .signup-page .signup-page-container .signup-img-container {
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: flex;
+  }
+  .signup-page .signup-page-container .signup-img-container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 380px;
+  }
+  .signup-page .signup-page-container .signup-inputs-container {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+    padding: 10px 10px;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .input-header-container {
+    margin: 13px 0;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-email-container {
+    width: 100%;
+    padding: 5px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-email-container .signup-email-input {
+    width: 90%;
+    display: flex;
+    padding: 9px 10px;
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 7px;
+         column-gap: 7px;
+    border-radius: 20px;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-email-container .signup-email-input .user-icon {
+    font-size: 20px;
+    color: black;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-email-container .signup-email-input input {
+    flex: 1;
+    font-size: 1rem;
+    padding: 2px 5px;
+    border: none;
+    outline: none;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-password-input-container {
+    width: 100%;
+    padding: 5px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px 0 0;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-password-input-container .signup-password-input {
+    width: 90%;
+    display: flex;
+    padding: 9px 10px;
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 7px;
+         column-gap: 7px;
+    border-radius: 20px;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-password-input-container .signup-password-input .lock-icon {
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-password-input-container .signup-password-input input {
+    flex: 1;
+    font-size: 1rem;
+    padding: 2px 5px;
+    border: none;
+    outline: none;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-confirm-password-container {
+    width: 100%;
+    padding: 5px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px 0;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-confirm-password-container .signup-confirm-password-input {
+    width: 90%;
+    display: flex;
+    padding: 9px 10px;
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 7px;
+         column-gap: 7px;
+    border-radius: 20px;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-confirm-password-container .signup-confirm-password-input .lock-icon {
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-confirm-password-container .signup-confirm-password-input input {
+    flex: 1;
+    font-size: 1rem;
+    padding: 2px 5px;
+    border: none;
+    outline: none;
+    background-color: #ECECEC;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-btn-container {
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .signup-btn-container .signup-btn {
+    width: 95%;
+    border: none;
+    outline: none;
+    background-color: #051937;
+    font-weight: 500;
+    color: white;
+    padding: 8px 0;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .bottom-border {
+    border: 1px solid;
+    width: 100%;
+    margin-top: 1.2rem;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .social-media-container {
+    display: flex;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    margin-top: 1.2rem;
+  }
+  .signup-page .signup-page-container .signup-inputs-container .social-media-container .socials-icon {
+    font-size: 28px;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=SignUp.css.map */
