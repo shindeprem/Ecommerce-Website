@@ -18,8 +18,8 @@ const App =()=>{
                 <Route path="product-listing" element={<ProductListing/>}/>
                 <Route path="product/:id" element={<ProductPage/>}/>
             </Route>
-            <Route path="/signin" element={<SignIn/>}/>
-            <Route path="/signup" element={<SignUp/>}/>
+            <Route path="/auth/signin" element={<SignIn/>}/>
+            <Route path="/auth/signup" element={<SignUp/>}/>
         </Routes>
         </>
     )
