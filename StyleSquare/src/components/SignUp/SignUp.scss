@@ -7,7 +7,6 @@
         display: flex;
         width: max-content;
         margin: auto;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
         .signup-img-container{
             object-fit: cover;
@@ -351,7 +350,7 @@
                 .bottom-border{
                     border: 1px solid;
                     width: 80%;
-                    margin-top: .7rem;
+                    margin: 2rem 0 .7rem;
                 }
     
                 .social-media-container{
@@ -380,7 +379,6 @@
             display: flex;
             width: max-content;
             margin: auto;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     
             .signup-img-container{
                 object-fit: cover;
@@ -538,7 +536,7 @@
                 .bottom-border{
                     border: 1px solid;
                     width: 100%;
-                    margin-top: .7rem;
+                    margin: 2rem 0 1.2rem;
                 }
     
                 .social-media-container{
