@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState , useEffect} from "react";
 import './SignUp.css'
 import {AiOutlineUser} from 'react-icons/ai';
 import {BsShieldLock} from 'react-icons/bs'
@@ -7,6 +7,22 @@ import {FcGoogle} from 'react-icons/fc'
 import img from '../../assets/images/signin-signup-img.png'
 
 const SignUp = ()=>{
+
+    const [user,  setUser] = useState({
+        emailId:'',password:'',confirmPassword:''
+    })
+
+    const handleSetUser = (e)=>{
+        const name = e.target.name;
+        const value = e.target.value;
+
+        setUser({...user,[name]:value})
+    }
+
+    useEffect(()=>{
+        console.log(user);
+    },[user])
+
     return(
         <div className="signup-page">
             <div className="signup-page-container">
@@ -20,7 +36,7 @@ const SignUp = ()=>{
                     <div className="signup-email-container">
                         <div className="signup-email-input">
                             <AiOutlineUser className="user-icon"/>
-                            <input type="email" className="email-input-container" placeholder="Enter email address..."
+                            <input name="emailId" onChange={handleSetUser} type="email" className="email-input-container" placeholder="Enter email address..."
                             />
                         </div>
                         
@@ -28,14 +44,15 @@ const SignUp = ()=>{
                     <div className="signup-password-input-container">
                         <div className="signup-password-input">
                             <BsShieldLock className="lock-icon"/>
-                            <input type="password" className="passwor-input" placeholder="Enter Password"
+                            <input name='password' onChange={handleSetUser} type="password" className="passwor-input" placeholder="Enter Password"
                             />
                         </div>
                     </div>
                     <div className="signup-confirm-password-container">
                         <div className="signup-confirm-password-input">
                             <BsShieldLock className="lock-icon"/>
-                            <input type="password" className="confirm-password-input" placeholder="Confirm Password"
+                            <input name='confirmPassword' onChange={handleSetUser}
+                            type="password" className="confirm-password-input" placeholder="Confirm Password"
                             />
                         </div>
                     </div>

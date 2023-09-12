@@ -4,9 +4,24 @@ import {BsApple} from 'react-icons/bs'
 import {FcGoogle} from 'react-icons/fc'
 import img from '../../assets/images/signin-signup-img.png'
 import './SignIn.css'
-
+import { useEffect, useState } from 'react';
 
 const SignIn = ()=>{
+    const [user,  setUser] = useState({
+        emailId:'',password:'',
+    })
+
+    const handleSetUser = (e)=>{
+        const name = e.target.name;
+        const value = e.target.value;
+
+        setUser({...user,[name]:value})
+    }
+
+    useEffect(()=>{
+        console.log(user);
+    },[user])
+
     return(
         <div className="signin-page">
             <div className="signin-page-container">
@@ -20,7 +35,7 @@ const SignIn = ()=>{
                     <div className="signin-email-container">
                         <div className="signin-email-input">
                             <AiOutlineUser className="user-icon"/>
-                            <input type="email" className="email-input-container" placeholder="Enter email address..."
+                            <input onChange={handleSetUser} name='emailId' type="email" className="email-input-container" placeholder="Enter email address..."
                             />
                         </div>
                         
@@ -28,7 +43,7 @@ const SignIn = ()=>{
                     <div className="signin-password-input-container">
                         <div className="signin-password-input">
                             <BsShieldLock className="lock-icon"/>
-                            <input type="password" className="passwor-input" placeholder="Enter Password"
+                            <input type="password" onChange={handleSetUser} name='password' className="passwor-input" placeholder="Enter Password"
                             />
                         </div>
                     </div>
