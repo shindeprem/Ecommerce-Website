@@ -10,6 +10,9 @@ import SignIn from "./components/SignIn/SignIn";
 import SignUp from "./components/SignUp/SignUp";
 
 const App =()=>{
+
+    // Add context here
+
     return(
         <>
         <Routes>
