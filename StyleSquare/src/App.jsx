@@ -1,6 +1,7 @@
-import React from "react";
+import React, { createContext, useReducer } from "react";
 import {Link,Route,Routes} from 'react-router-dom'
 import './App.css'
+import reducer from "./components/AddToCartSlice/AddToCart";
 import MainPage from "./pages/Main/mainPage";
 import ProductListing from "./pages/products-listing/ProductsListing";
 import ProductsLayout from "./pages/Products-Layout/ProductsLayout";
