@@ -11,7 +11,7 @@ import SignIn from "./components/SignIn/SignIn";
 import SignUp from "./components/SignUp/SignUp";
 import UserCart from "./components/UserCart/UserCart";
 
-export const CartContext = createContext();
+export const CartContext = createContext('');
 
 const products = []
 
@@ -75,6 +75,7 @@ const App =()=>{
                 <Route index element={<MainPage/>}/>
                 <Route path="product-listing" element={<ProductListing/>}/>
                 <Route path="product/:id" element={<ProductPage/>}/>
+                <Route path="/products/cart" element={<UserCart/>}/>
             </Route>
             <Route path="/auth/signin" element={<SignIn/>}/>
             <Route path="/auth/signup" element={<SignUp/>}/>
