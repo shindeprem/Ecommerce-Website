@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import './Product-Card.css'
 import {BsBag} from 'react-icons/bs'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
+import { CartContext } from "../../App";
 
 const ProductCard = (product)=>{
+    const {addItem} = useContext(CartContext);
     return(
         <div className="product-card">
             <div className="img-container">
@@ -30,7 +32,7 @@ const ProductCard = (product)=>{
                 <div className="product-price">50$</div>
 
                 <div className="btn-container">
-                    <button className="add-to-cart"><AiOutlineShoppingCart className="cart-icon"/>Add to cart</button>
+                    <button className="add-to-cart" onClick={()=>{addItem(product.name,product.id)}}><AiOutlineShoppingCart className="cart-icon"/>Add to cart</button>
                     <button className="buy-now-btn"><BsBag className="bag-icon"/> Buy Now</button>
                 </div>
             </div>

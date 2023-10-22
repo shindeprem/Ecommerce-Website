@@ -4,10 +4,16 @@ import { CartContext } from "../../App";
 
 const UserCart = ()=>{
 
-    const {name,increment,decrement,clearCart,totalItems} = useContext(CartContext)
+    const {item,increment,decrement,clearCart,totalItems} = useContext(CartContext)
 
     return(
-        <></>
+        <div className="cart-items-container">
+            {item.map((item)=>{
+                return(
+                    <>{item.name}</>
+                )
+            })}
+        </div>
     )
 }
 

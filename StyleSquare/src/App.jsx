@@ -10,6 +10,7 @@ import ProductPage from "./components/Product-Page/ProductPage";
 import SignIn from "./components/SignIn/SignIn";
 import SignUp from "./components/SignUp/SignUp";
 import UserCart from "./components/UserCart/UserCart";
+import ProductCard from "./components/Product-Card/Product-Card";
 
 export const CartContext = createContext('');
 
@@ -69,6 +70,7 @@ const App =()=>{
         <>
         <CartContext.Provider value={{...state,addItem,clearCart,increment,decrement,removeItem}}>
             <UserCart/>
+            <ProductCard/>
         </CartContext.Provider>
         <Routes>
             <Route path="/" element={<ProductsLayout/>}>
