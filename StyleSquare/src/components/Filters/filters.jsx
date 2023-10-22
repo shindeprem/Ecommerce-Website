@@ -133,10 +133,10 @@ const Filters = ({isOpen,setIsOpen}) =>{
                         </div>
 
                         <div className="category-filter-container">
-                            {categories.map((category)=>{
+                            {categories.map((category,index)=>{
                                 return(
                                     <div className={`${selectedCategories.includes(category)?'selected':''} category-container`}
-                                    onClick={()=>{handleCategoryFilter(category)}}
+                                    onClick={()=>{handleCategoryFilter(category)}} key={index}
                                     >
                                         {category.toLocaleUpperCase()}
                                     </div>

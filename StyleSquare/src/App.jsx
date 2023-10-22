@@ -71,6 +71,7 @@ const App =()=>{
         <CartContext.Provider value={{...state,addItem,clearCart,increment,decrement,removeItem}}>
             <UserCart/>
             <ProductCard/>
+            <ProductPage/>
         </CartContext.Provider>
         <Routes>
             <Route path="/" element={<ProductsLayout/>}>

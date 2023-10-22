@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useParams } from "react-router-dom";
 import './ProductPage.css'
 import img4 from '../../assets/images/jeans-1.jpg'
@@ -6,6 +6,7 @@ import img2 from '../../assets/images/jeans-2.jpg'
 import img3 from '../../assets/images/jeans-3.jpg'
 import img1 from '../../assets/images/jeans-4.jpg'
 import ProductsCarousel from "../FetchApiProducts/productsCarousel";
+import { CartContext } from "../../App";
 
 
 const productImg = [img1,img2,img3,img4]
@@ -36,8 +37,17 @@ const ProductPage = ()=>{
 
     const [isAddedToCart,setIsAddedToCart] = useState(false)
 
+    const {addItem,removeItem} = useContext(CartContext)
     const handleAddToCart = ()=>{
         setIsAddedToCart((isAddedToCart)=>!isAddedToCart)
+
+        isAddedToCart?addItem(product.id,product.name,product.price):removeItem(product.id)
+    }
+
+    const product = {
+        name:'Nothing',
+        id:'None',
+        price:'none',
     }
 
     return(
