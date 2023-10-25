@@ -69,9 +69,9 @@ const App =()=>{
     return(
         <>
         <CartContext.Provider value={{...state,addItem,clearCart,increment,decrement,removeItem}}>
-            <UserCart/>
+            {/* <UserCart/>
             <ProductCard/>
-            <ProductPage/>
+            <ProductPage/> */}
         </CartContext.Provider>
         <Routes>
             <Route path="/" element={<ProductsLayout/>}>
