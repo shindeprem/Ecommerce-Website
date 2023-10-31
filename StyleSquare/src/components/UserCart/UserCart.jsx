@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import CartProduct from "./CartProduct";
 import { CartContext } from "../../App";
+import './UserCart.css'
 import img1 from '../../assets/images/blue-striped-shirt.jpg'
 
 const UserCart = ()=>{
