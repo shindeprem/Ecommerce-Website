@@ -141,8 +141,14 @@
         grid-template-columns: repeat(2,1fr);
 
         .cart-item{
-            width: 70%;
+            width: 80%;
             min-width: 250px;
+
+            .cart-item-img{
+                max-height: 280px;
+                overflow: hidden;
+                border-radius: 10px 10px 0 0;
+            }
         }
     }
 }

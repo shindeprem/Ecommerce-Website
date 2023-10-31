@@ -5,6 +5,7 @@ import './UserCart.css'
 import img1 from '../../assets/images/blue-striped-shirt.jpg'
 import {FiPlus} from 'react-icons/fi'
 import {AiOutlineMinus} from 'react-icons/ai'
+import {BsBagCheck} from 'react-icons/bs'
 
 const UserCart = ()=>{
 
@@ -49,7 +50,10 @@ const UserCart = ()=>{
         },
     ]
     return(
+        <>
+        <h1 className="my-cart-heading" style={{maxWidth:'1180px',margin:'10px auto 14px', display:'flex',alignItems:'center',justifyContent:'center',fontWeight:'700',fontSize:'32px',columnGap:'1rem'}}><BsBagCheck/> My Cart </h1>
         <div className="cart-items-container">
+
             {item.map((item)=>{
                 return(
                     <div className="cart-item">
@@ -88,6 +92,7 @@ const UserCart = ()=>{
                 )
             })}
         </div>
+        </>
     )
 }
 
