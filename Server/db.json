@@ -1,0 +1,255 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Kids T-Shirt",
+        "price": 19.99,
+        "size": "M",
+        "color": "Red",
+        "image": "kidstshirt.jpg",
+        "description": "A comfortable and stylish t-shirt for kids.",
+        "category": "kids"
+      },
+      {
+        "id": 2,
+        "name": "Men's Shirt",
+        "price": 29.99,
+        "size": "L",
+        "color": "White",
+        "image": "mensshirt.jpg",
+        "description": "A classic men's shirt for formal occasions.",
+        "category": "shirt"
+      },
+      {
+        "id": 3,
+        "name": "Women's Saree",
+        "price": 49.99,
+        "size": "O",
+        "color": "Red",
+        "image": "womensaree.jpg",
+        "description": "Elegant saree for women with a traditional touch.",
+        "category": "saree"
+      },
+      {
+        "id": 4,
+        "name": "Accessories Set",
+        "price": 14.99,
+        "size": "O",
+        "color": "Gold",
+        "image": "accessoriesset.jpg",
+        "description": "A set of stylish accessories to complement your outfit.",
+        "category": "accessories"
+      },
+      {
+        "id": 5,
+        "name": "Kid's Jeans",
+        "price": 24.99,
+        "size": "S",
+        "color": "Blue",
+        "image": "kidsjeans.jpg",
+        "description": "Fashionable jeans for kids.",
+        "category": "kids"
+      },
+      {
+        "id": 6,
+        "name": "Women's Blouse",
+        "price": 34.99,
+        "size": "M",
+        "color": "Pink",
+        "image": "womensblouse.jpg",
+        "description": "Stylish blouse for women.",
+        "category": "saree"
+      },
+      {
+        "id": 7,
+        "name": "Men's Tie",
+        "price": 9.99,
+        "size": "O",
+        "color": "Black",
+        "image": "menstie.jpg",
+        "description": "Classic tie for men.",
+        "category": "accessories"
+      },
+      {
+        "id": 8,
+        "name": "Kid's Dress",
+        "price": 29.99,
+        "size": "L",
+        "color": "Yellow",
+        "image": "kidsdress.jpg",
+        "description": "Adorable dress for kids.",
+        "category": "kids"
+      },
+      {
+        "id": 9,
+        "name": "Men's Shoes",
+        "price": 39.99,
+        "size": "M",
+        "color": "Brown",
+        "image": "mensshoes.jpg",
+        "description": "Stylish shoes for men.",
+        "category": "shirt"
+      },
+      {
+        "id": 10,
+        "name": "Women's Handbag",
+        "price": 19.99,
+        "size": "O",
+        "color": "Purple",
+        "image": "womenshandbag.jpg",
+        "description": "Chic handbag for women.",
+        "category": "accessories"
+      },
+      {
+        "id": 11,
+        "name": "Kid's Hoodie",
+        "price": 24.99,
+        "size": "S",
+        "color": "Green",
+        "image": "kidshoodie.jpg",
+        "description": "Cozy hoodie for kids.",
+        "category": "kids"
+      },
+      {
+        "id": 12,
+        "name": "Men's Polo Shirt",
+        "price": 29.99,
+        "size": "L",
+        "color": "Navy",
+        "image": "menspoloshirt.jpg",
+        "description": "Casual polo shirt for men.",
+        "category": "shirt"
+      },
+      {
+        "id": 13,
+        "name": "Women's Earrings",
+        "price": 14.99,
+        "size": "O",
+        "color": "Silver",
+        "image": "womensearrings.jpg",
+        "description": "Elegant earrings for women.",
+        "category": "accessories"
+      },
+      {
+        "id": 14,
+        "name": "Kid's Backpack",
+        "price": 19.99,
+        "size": "O",
+        "color": "Blue",
+        "image": "kidsbackpack.jpg",
+        "description": "Fun backpack for kids.",
+        "category": "kids"
+      },
+      {
+        "id": 15,
+        "name": "Men's Jacket",
+        "price": 49.99,
+        "size": "M",
+        "color": "Black",
+        "image": "mensjacket.jpg",
+        "description": "Stylish jacket for men.",
+        "category": "shirt"
+      },
+      {
+        "id": 16,
+        "name": "Women's Sandals",
+        "price": 24.99,
+        "size": "L",
+        "color": "Brown",
+        "image": "womenssandals.jpg",
+        "description": "Comfortable sandals for women.",
+        "category": "saree"
+      },
+      {
+        "id": 17,
+        "name": "Men's Hat",
+        "price": 9.99,
+        "size": "O",
+        "color": "Gray",
+        "image": "menshat.jpg",
+        "description": "Classic hat for men.",
+        "category": "accessories"
+      },
+      {
+        "id": 18,
+        "name": "Kid's Backpack",
+        "price": 16.99,
+        "size": "O",
+        "color": "Pink",
+        "image": "kidspinkbackpack.jpg",
+        "description": "Adorable pink backpack for kids.",
+        "category": "kids"
+      },
+      {
+        "id": 19,
+        "name": "Men's Jeans",
+        "price": 34.99,
+        "size": "L",
+        "color": "Blue",
+        "image": "mensjeans.jpg",
+        "description": "Casual jeans for men.",
+        "category": "shirt"
+      },
+      {
+        "id": 20,
+        "name": "Women's Scarf",
+        "price": 14.99,
+        "size": "O",
+        "color": "Red",
+        "image": "womensscarf.jpg",
+        "description": "Stylish scarf for women.",
+        "category": "saree"
+      },
+      {
+        "id": 21,
+        "name": "Accessories Set",
+        "price": 12.99,
+        "size": "O",
+        "color": "Silver",
+        "image": "accessoriesset2.jpg",
+        "description": "Another set of stylish accessories to complement your outfit.",
+        "category": "accessories"
+      },
+      {
+        "id": 22,
+        "name": "Kid's Sweater",
+        "price": 19.99,
+        "size": "S",
+        "color": "Green",
+        "image": "kidssweater.jpg",
+        "description": "Warm sweater for kids.",
+        "category": "kids"
+      },
+      {
+        "id": 23,
+        "name": "Men's Belt",
+        "price": 9.99,
+        "size": "O",
+        "color": "Brown",
+        "image": "mensbelt.jpg",
+        "description": "Classic belt for men.",
+        "category": "shirt"
+      },
+      {
+        "id": 24,
+        "name": "Women's Sunglasses",
+        "price": 24.99,
+        "size": "O",
+        "color": "Black",
+        "image": "womenssunglasses.jpg",
+        "description": "Stylish sunglasses for women.",
+        "category": "accessories"
+      },
+      {
+        "id": 25,
+        "name": "Kid's Pajamas",
+        "price": 16.99,
+        "size": "M",
+        "color": "Blue",
+        "image": "kidspajamas.jpg",
+        "description": "Cozy pajamas for kids.",
+        "category": "kids"
+      }
+    ]
+  }
+  
