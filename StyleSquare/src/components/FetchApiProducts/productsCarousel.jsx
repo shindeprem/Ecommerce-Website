@@ -13,8 +13,6 @@ const ProductsCarousel=(prop)=>{
 
     const productsContainerRef = useRef(null);
 
-    
-
     useEffect(() => {
       const fetchData = async () => {
           try {

@@ -1,11 +1,17 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import './Product-Card.css'
 import {BsBag} from 'react-icons/bs'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import { CartContext } from "../../App";
 
+
 const ProductCard = (product)=>{
     const {addItem} = useContext(CartContext);
+
+
+    
+
+
     return(
         <div className="product-card">
             <div className="img-container">
