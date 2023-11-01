@@ -58,6 +58,14 @@ app.get('/allProducts',async(req,res)=>{
     res.status(200).json({allProducts,success:true,msg:'successfull request'})
 })
 
+
+app.get('/product/:id',async(req,res)=>{
+    const {id} = req.params
+    const searchedProduct = await Product.findById(id)
+
+    res.status(200).json({searchedProduct,success:true,msg:'Productfetchedsuccessfully'})
+})
+
 app.listen(PortNo,()=>{
     console.log(`Server started at port number ${PortNo}`);
 })
