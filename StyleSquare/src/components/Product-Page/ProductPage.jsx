@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import './ProductPage.css'
 import img4 from '../../assets/images/jeans-1.jpg'
@@ -8,12 +8,39 @@ import img1 from '../../assets/images/jeans-4.jpg'
 import ProductsCarousel from "../FetchApiProducts/productsCarousel";
 import { CartContext } from "../../App";
 
-
 const productImg = [img1,img2,img3,img4]
 
 const ProductPage = ()=>{
     const {id}=useParams()
     // console.log(id);
+
+    const [product,setProduct] = useState({})
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const res = await fetch(`http://localhost:8000/product/${id}`, {
+                    method: "GET",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                });
+  
+                if (res.ok) {
+                    const data = await res.json();
+                    const {searchedProduct} = data;
+                    console.log(searchedProduct)
+                    setProduct(searchedProduct)
+                } else {
+                    console.error("Failed to fetch data");
+                }
+            } catch (error) {
+                console.error("An error occurred while fetching data:", error);
+            }
+        };
+  
+        fetchData();
+    }, []);
 
     const  [mainImg,setMainImg] = useState(img1)
     const handleSetImg = (img)=>{
@@ -44,11 +71,11 @@ const ProductPage = ()=>{
         isAddedToCart?addItem(product.id,product.name,product.price):removeItem(product.id)
     }
 
-    const product = {
-        name:'Nothing',
-        id:'None',
-        price:'none',
-    }
+    // const product = {
+    //     name:'Nothing',
+    //     id:'None',
+    //     price:'none',
+    // }
 
     return(
         <div className="product-page-wrapper">
@@ -72,15 +99,15 @@ const ProductPage = ()=>{
             <div className="product-info-container">
                 <div className="product-name-heading-container">
                     <h1 className="product-name-heading">
-                        Blue Auty Jeans - Scalar Pants Auty brand
+                        {product.name}
                     </h1>
                 </div>
                 <div className="product-price-container">
                     <div className="price-after-sale">
-                        $499
+                        ${product.price}
                     </div> 
                     <div className="price-before-sale">
-                        $999
+                        $100
                     </div>
                 </div>
                 <div className="product-ratings-container">
@@ -118,7 +145,7 @@ const ProductPage = ()=>{
                             Product Description
                         </h3>
                         <div className="product-desc-content">
-                            Wanna update your everyday staples? Jump on the silhouette of the season with these Slate Blue Baggy Fit Rigid jeans our latest collection. Featuring a relaxed fit across the waist and fitting loosely down the legs for easy movement.
+                            {product.description}
                         </div>
                         
                     </div>
