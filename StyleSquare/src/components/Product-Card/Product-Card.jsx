@@ -9,7 +9,7 @@ const ProductCard = (product)=>{
     const {addItem} = useContext(CartContext);
 
 
-    
+    console.log(product)
 
 
     return(
@@ -27,15 +27,15 @@ const ProductCard = (product)=>{
             <div className="product-details">
                 <div className="product-name-heading">
                     <h2 className="product-name">
-                        Black autty Shirt
+                        {product.name}
                     </h2>
                 </div>
                 <div className="product-description">
                     <p className="product-desc">
-                        Lorem ipsum dolor sit amet, consec tetur adipisicing elit...
+                        {product.description}
                     </p>
                 </div>
-                <div className="product-price">50$</div>
+                <div className="product-price">{product.price}</div>
 
                 <div className="btn-container">
                     <button className="add-to-cart" onClick={()=>{addItem(product.name,product.id)}}><AiOutlineShoppingCart className="cart-icon"/>Add to cart</button>
