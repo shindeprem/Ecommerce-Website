@@ -41,6 +41,25 @@ const productSchema = new mongoose.Schema({
 
 const Product  = new mongoose.model('Product',productSchema)
 
+
+const userSchema = new mongoose.Schema({
+    username:{
+        type:String,
+        required:true,
+    },
+    email:{
+        required:true,
+        type:String,
+    },
+    password:{
+        type:String,
+        required:true,
+    }
+})
+
+const User = new mongoose.model('User',userSchema)
+
+
 const corsOptions = {
     origin: 'http://localhost:5173', // Update this to match your client's origin
     credentials: true,
