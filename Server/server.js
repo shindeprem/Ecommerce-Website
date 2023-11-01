@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const PortNo = 8000;
 const connectionString = 'mongodb://127.0.0.1/ecommDataBase'
 const cors = require('cors');
+// const {isUserExisting} = require('./middleware')
 
 mongoose.connect(connectionString,
     {useNewUrlParser:true,useUnifiedTopology:true}
@@ -85,8 +86,45 @@ app.get('/product/:id',async(req,res)=>{
     res.status(200).json({searchedProduct,success:true,msg:'Productfetchedsuccessfully'})
 })
 
+
+
+
+// ----------------------------------------------- Middleware ------------------------------------------------------------
+
+const isUserExisting = async(req,res,next) =>{
+    const {email} = req.body;
+    const userExist = await User.findOne({ email: email });
+
+    if (userExist) {
+        res.status(401).json({
+            msg: 'User already exists'
+        });
+    } else {
+        // User doesn't exist, continue to the next middleware
+        next();
+    }
+}
+
+//------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+app.post('/auth/signup',isUserExisting,async(req,res)=>{
+    const {username,email,password} = req.body;
+    const newUser = await User.create({username:username,email:email,password:password});
+
+    res.status(200).json({
+        newUser:newUser,
+    })
+})
+
 app.listen(PortNo,()=>{
     console.log(`Server started at port number ${PortNo}`);
 })
 
-module.exports = Product;
+
+
+
+module.exports = {Product,User};
