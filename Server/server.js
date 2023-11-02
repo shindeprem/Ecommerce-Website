@@ -6,6 +6,8 @@ const PortNo = 8000;
 const connectionString = 'mongodb://127.0.0.1/ecommDataBase'
 const cors = require('cors');
 // const {isUserExisting} = require('./middleware')
+const jwt = require('jsonwebtoken')
+const secretText = '%6&%$***S^K'
 
 mongoose.connect(connectionString,
     {useNewUrlParser:true,useUnifiedTopology:true}
@@ -89,7 +91,9 @@ app.get('/product/:id',async(req,res)=>{
 
 
 
-// ----------------------------------------------- Middleware ------------------------------------------------------------
+// ------------------------------------------- Middleware --------------------------------------------------
+
+// Add rourtes in different file middlewares in different file and main file will be different
 
 const isUserExisting = async(req,res,next) =>{
     const {email} = req.body;
@@ -102,6 +106,19 @@ const isUserExisting = async(req,res,next) =>{
     } else {
         // User doesn't exist, continue to the next middleware
         next();
+    }
+}
+
+const findUser = async(req,res,next)=>{
+    const {email} = req.body;
+    const userExisting = await User.findOne({email:email})
+
+    if(userExisting){
+        next()
+    }else{
+        res.status(401).json({
+            msg:'User doesnt exist'
+        })
     }
 }
 
@@ -118,6 +135,24 @@ app.post('/auth/signup',isUserExisting,async(req,res)=>{
     res.status(200).json({
         newUser:newUser,
     })
+})
+
+app.post('/auth/signin',findUser,async(req,res)=>{
+
+    const {email} = req.body;
+    const user = await User.findOne({email:email})
+    const {username} = user;
+    const payload = {
+        username:username,
+        admin:true,
+    }
+
+    const token = jwt.sign(payload,secretText,{expiresIn:'10s'}) // change this with refresh token and httpOnly and according to tweets and add authorization to keep user logged in(YT)
+
+    res.cookie('username',token,{httpOnly:true,maxAge:10000}).
+    status(200).json({
+        msg:'Signed in successfully'
+    });
 })
 
 app.listen(PortNo,()=>{
