@@ -13,41 +13,11 @@ const UserCart = ()=>{
 
     const item = [
         {
-            name:'Shirt hai bhai',
+            name:'Mens Shirt',
             price:190,
             image:img1,
             quanitity:4,
-        },
-        {
-            name:'Shirt hai bhai',
-            price:190,
-            image:img1,
-            quanitity:4,
-        },
-        {
-            name:'Shirt hai bhai',
-            price:190,
-            image:img1,
-            quanitity:4,
-        },
-        {
-            name:'Shirt hai bhai',
-            price:190,
-            image:img1,
-            quanitity:4,
-        },
-        {
-            name:'Shirt hai bhai',
-            price:190,
-            image:img1,
-            quanitity:4,
-        },
-        {
-            name:'Shirt hai bhai',
-            price:190,
-            image:img1,
-            quanitity:4,
-        },
+        }
     ]
     return(
         <>

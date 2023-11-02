@@ -93,7 +93,7 @@ app.get('/product/:id',async(req,res)=>{
 
 // ------------------------------------------- Middleware --------------------------------------------------
 
-// Add rourtes in different file middlewares in different file and main file will be different
+    // Add rourtes in different file middlewares in different file and main file will be different
 
 const isUserExisting = async(req,res,next) =>{
     const {email} = req.body;
@@ -130,6 +130,7 @@ const findUser = async(req,res,next)=>{
 
 app.post('/auth/signup',isUserExisting,async(req,res)=>{
     const {username,email,password} = req.body;
+    // console.log(req.body)
     const newUser = await User.create({username:username,email:email,password:password});
 
     res.status(200).json({
@@ -158,8 +159,6 @@ app.post('/auth/signin',findUser,async(req,res)=>{
 app.listen(PortNo,()=>{
     console.log(`Server started at port number ${PortNo}`);
 })
-
-
 
 
 module.exports = {Product,User};
