@@ -4,9 +4,11 @@ import { useContext } from "react";
 import {AiFillCloseCircle} from 'react-icons/ai'
 
 
-const Filters = ({isOpen,setIsOpen}) =>{
+const Filters = ({isOpen,setIsOpen,filteredArray,setFilteredArray,productList}) =>{
 
-    const selectColors = ['red','pink','yellow','gray','black','orange']
+    // console.log(filteredArray);
+
+    const selectColors = ['Red','Pink','Yellow','Gray','Black','Orange']
     const [selectedColors,setSelectedColors] = useState([])
     const addColor = (color) => {
         if (selectedColors.includes(color)) {
@@ -14,7 +16,11 @@ const Filters = ({isOpen,setIsOpen}) =>{
         } else {
             setSelectedColors([...selectedColors, color]);
         }
+
     }
+
+
+
     
     const [highestRate,setHighestRate] = useState(1000)
     const handlePriceChange =(e)=>{
@@ -26,6 +32,7 @@ const Filters = ({isOpen,setIsOpen}) =>{
     // const [sortedArr,setSortedArr] = useState(availableClothesArr)
     const handleSort = (e)=>{
         const {value} = e.target;
+        console.log(value);
         setSelectedSorting(value)
 
         // const sortedArr = [...clothesArr].sort((a,b)=>{
@@ -41,7 +48,7 @@ const Filters = ({isOpen,setIsOpen}) =>{
         // setSortedArr(sortedArr)
     }
 
-    const categories = ['kids','women','mens','jeans','shirts','saree','hoodie']
+    const categories = ['kids','women','mens','jeans','shirt','saree','hoodie']
     const [selectedCategories,setSelectedCategories] = useState([])
     const handleCategoryFilter = (category)=>{
         if (selectedCategories.includes(category)) {
@@ -52,11 +59,58 @@ const Filters = ({isOpen,setIsOpen}) =>{
     }
     
     useEffect(()=>{
-        console.log(selectedColors);
-        console.log(highestRate);
-        console.log(selectedCategories);
+        // console.log(selectedColors);
+        // console.log(highestRate);
+        // console.log(selectedCategories);
         //console.log(highestRate);
     },[selectedColors,highestRate,selectedCategories])
+
+
+    
+    // ================================== Array Filtering =========================================================
+
+
+    useEffect(()=>{
+        let filteredProducts = productList;
+
+        if (selectedColors.length > 0) {
+            filteredProducts = filteredProducts.filter((product) => selectedColors.includes(product.color));
+        }
+
+        if (highestRate !== 1000) {
+            filteredProducts = filteredProducts.filter((product) => Number(product.price) <= highestRate);
+        }
+
+        filteredProducts = [...filteredProducts].sort((a,b)=>{
+            if(selectedSorting==="high-to-low"){
+                return b.price - a.price
+            }else if(selectedSorting==="low-to-high"){
+                return a.price - b.price
+            }else{
+                return filteredProducts
+            }
+        })
+
+
+        if (selectedCategories.length > 0) {
+            filteredProducts = filteredProducts.filter((product) =>
+                selectedCategories.includes(product.category)
+            );
+        }
+
+
+        setFilteredArray(filteredProducts);
+
+        if(filteredArray.length === 0){
+            setFilteredArray(productList)
+        }
+
+        if (selectedColors.length === 0 && highestRate === 0) {
+            setFilteredArray(productList);
+        }
+        
+    },[selectedColors, highestRate,selectedSorting, selectedCategories,productList])
+    // ======================================================================================================================
     
     return(
         // filter, sorting, pagination

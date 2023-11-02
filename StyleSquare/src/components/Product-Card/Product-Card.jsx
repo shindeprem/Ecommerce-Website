@@ -9,7 +9,7 @@ const ProductCard = (product)=>{
     const {addItem} = useContext(CartContext);
 
 
-    console.log(product)
+    // console.log(product)
 
 
     return(

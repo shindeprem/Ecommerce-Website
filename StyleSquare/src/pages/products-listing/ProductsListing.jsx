@@ -371,6 +371,7 @@ const ProductListing = ()=>{
 
       fetchData();
   }, []);
+  
 
   // -----------------------------------------
 
@@ -378,6 +379,12 @@ const ProductListing = ()=>{
     const handleFilter = ()=>{
       setIsOpenFilter((isOpenFilter)=>!isOpenFilter)
     }
+
+    const [filteredArray,setFilteredArray] = useState(productList)
+
+    useEffect(()=>{
+        setFilteredArray(productList)
+    },[productList])
 
     return(
       
@@ -389,10 +396,11 @@ const ProductListing = ()=>{
               
             </div>
             <div className={`${isOpenFilter?'open-filter':'close-filter'} filter-sidebar`}>
-              <Filters className="all-filters" isOpen={isOpenFilter} setIsOpen={setIsOpenFilter}/>
+              <Filters className="all-filters" isOpen={isOpenFilter} setIsOpen={setIsOpenFilter} filteredArray={filteredArray} productList={productList} setFilteredArray={setFilteredArray}/> 
+              {/* pass array and setArray */}
             </div>
             <div className="all-products">
-                {productList.map((product,index)=>{
+                {filteredArray.map((product,index)=>{
                     return(
                       
                         <ProductCard className={` product-card`} key={index}  {...product}/>
