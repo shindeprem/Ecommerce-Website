@@ -9,16 +9,9 @@ import {BsBagCheck} from 'react-icons/bs'
 
 const UserCart = ()=>{
 
-    // const {item,increment,decrement,clearCart,totalItems} = useContext(CartContext)
+    const {item,increment,decrement,clearCart,totalItems} = useContext(CartContext)
+    console.log(item);
 
-    const item = [
-        {
-            name:'Mens Shirt',
-            price:190,
-            image:img1,
-            quanitity:4,
-        }
-    ]
     return(
         <>
         <h1 className="my-cart-heading" style={{maxWidth:'1180px',margin:'10px auto 14px', display:'flex',alignItems:'center',justifyContent:'center',fontWeight:'700',fontSize:'32px',columnGap:'1rem'}}><BsBagCheck/> My Cart </h1>

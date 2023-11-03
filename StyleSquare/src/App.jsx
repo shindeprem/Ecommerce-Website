@@ -18,6 +18,7 @@ const products = []
 
 const initialState = {
     item:products,
+    id:null,
     totalAmount:25600,
     totalItems:0,
     quantity:1,
@@ -56,12 +57,13 @@ const App =()=>{
     });
   };
 
-  const addItem = (id,name) =>{
+  const addItem = (id,name,price) =>{
     return dispatch({
         type:'add-to-cart',
         payload:{
             id:id,
             name:name,
+            price:price,
         }
     })
   }
@@ -69,20 +71,17 @@ const App =()=>{
     return(
         <>
         <CartContext.Provider value={{...state,addItem,clearCart,increment,decrement,removeItem}}>
-            {/* <UserCart/>
-            <ProductCard/>
-            <ProductPage/> */}
+          <Routes>
+              <Route path="/" element={<ProductsLayout/>}>
+                  <Route index element={<MainPage/>}/>
+                  <Route path="product-listing" element={<ProductListing/>}/>
+                  <Route path="product/:id" element={<ProductPage/>}/>
+                  <Route path="/products/cart" element={<UserCart/>}/>
+              </Route>
+              <Route path="/auth/signin" element={<SignIn/>}/>
+              <Route path="/auth/signup" element={<SignUp/>}/>
+          </Routes>
         </CartContext.Provider>
-        <Routes>
-            <Route path="/" element={<ProductsLayout/>}>
-                <Route index element={<MainPage/>}/>
-                <Route path="product-listing" element={<ProductListing/>}/>
-                <Route path="product/:id" element={<ProductPage/>}/>
-                <Route path="/products/cart" element={<UserCart/>}/>
-            </Route>
-            <Route path="/auth/signin" element={<SignIn/>}/>
-            <Route path="/auth/signup" element={<SignUp/>}/>
-        </Routes>
         </>
     )
 }

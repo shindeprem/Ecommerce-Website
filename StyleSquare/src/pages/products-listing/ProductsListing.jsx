@@ -3,6 +3,7 @@ import ProductCard from '../../components/Product-Card/Product-Card'
 import './ProductsListing.css'
 import Filters from "../../components/Filters/filters";
 import {AiOutlineRight} from 'react-icons/ai'
+import { Link } from "react-router-dom";
 
 const ProductListing = ()=>{
     // const ProductsList = [
@@ -371,7 +372,7 @@ const ProductListing = ()=>{
 
       fetchData();
   }, []);
-  
+
 
   // -----------------------------------------
 
@@ -389,6 +390,9 @@ const ProductListing = ()=>{
     return(
       
         <div className="product-listing" style={{height:isOpenFilter?'600px':''}}>
+
+            <Link to={'/products/cart'}>Your Cart</Link>
+
             <div className={`filters-on-btn ${isOpenFilter?'not-show-filter-btn':''}`}>
               <div className="btn-container" onClick={handleFilter}>
                 Filters <AiOutlineRight/>

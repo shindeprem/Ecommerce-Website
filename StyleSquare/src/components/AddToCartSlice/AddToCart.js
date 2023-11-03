@@ -3,8 +3,14 @@ const reducer = (state,action)=>{
         const newItem = {
             id:action.payload.id,
             name:action.payload.name,
-            quantity:1
+            quantity:1,
+            price:action.payload.price,
         }
+
+        console.log(state.item);
+        console.log(typeof(newItem.id));
+        console.log(typeof(state.item.id));
+        console.log(state.item.id); // undefined
 
         // check whether the item already exist or not 
 
@@ -15,6 +21,7 @@ const reducer = (state,action)=>{
         if(exitingItem){
             const updatedCart = state.item.map((item)=>{
                 if(item.id === newItem.id){
+                    console.log('same id');
                     return {...item,quantity:item.quantity+1};
                 }
                 return item;

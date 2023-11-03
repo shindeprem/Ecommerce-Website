@@ -9,7 +9,6 @@ const ProductCard = (product)=>{
     const {addItem} = useContext(CartContext);
 
 
-    // console.log(product)
 
 
     return(
@@ -35,10 +34,10 @@ const ProductCard = (product)=>{
                         {product.description}
                     </p>
                 </div>
-                <div className="product-price">{product.price}</div>
+                <div className="product-price">${product.price}</div>
 
                 <div className="btn-container">
-                    <button className="add-to-cart" onClick={()=>{addItem(product.name,product.id)}}><AiOutlineShoppingCart className="cart-icon"/>Add to cart</button>
+                    <button className="add-to-cart" onClick={()=>{addItem(product.id,product.name,product.price)}}><AiOutlineShoppingCart className="cart-icon"/>Add to cart</button>
                     <button className="buy-now-btn"><BsBag className="bag-icon"/> Buy Now</button>
                 </div>
             </div>
