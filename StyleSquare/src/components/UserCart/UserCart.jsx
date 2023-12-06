@@ -9,7 +9,7 @@ import {BsBagCheck} from 'react-icons/bs'
 
 const UserCart = ()=>{
 
-    const {item,increment,decrement,clearCart,totalItems} = useContext(CartContext)
+    const {item,increment,decrement,clearCart,totalItems,removeItem} = useContext(CartContext)
     console.log(item);
 
     return(
@@ -33,22 +33,22 @@ const UserCart = ()=>{
                                     Total Price :
                                 </div>
                                 <div className="items-price">
-                                    ${item.price*item.quanitity}
+                                    ${Math.round(item.price*(item.quantity))}
                                 </div>
                                 
                             </div>
 
                             <div className="quantity-incr-decr-btn">
-                                <div className="incr-btn-container">
+                                <div className="incr-btn-container" onClick={()=>increment(item.id)}>
                                     <FiPlus/>
                                 </div>
-                                <input type="number" placeholder={item.quanitity} disabled/>
-                                <div className="decr-btn-container">
+                                <input type="number" placeholder={item.quantity} disabled/>
+                                <div className="decr-btn-container" onClick={()=>decrement(item.id)}>
                                     <AiOutlineMinus/>
                                 </div>
                             </div>
 
-                            <button className="remove-item-btn">Remove Item</button>
+                            <button className="remove-item-btn" onClick={()=>removeItem(item.id)}>Remove Item</button>
                         </div>
                         
                     </div>

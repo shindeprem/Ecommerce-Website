@@ -74,14 +74,14 @@ const reducer = (state,action)=>{
 
     if(action.type==='decrement'){
         let updatedCart = state.item.map((curElem)=>{
-            if(curElem.id==='action.payload'){
+            if(curElem.id===action.payload){
                 return {...curElem,quantity:curElem.quantity-1}
                 // if this statement is true then decrement quantity
             }
             return curElem;
         })
         .filter((curElem)=>{
-            curElem.quantity !== 0
+            return curElem.quantity !== 0
         })
         return {...state,item:updatedCart};
     }
