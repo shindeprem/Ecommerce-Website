@@ -64,7 +64,7 @@ const User = new mongoose.model('User',userSchema)
 
 
 const corsOptions = {
-    origin: 'http://localhost:5174', // Update this to match your client's origin
+    origin: 'http://localhost:5173', // Update this to match your client's origin
     credentials: true,
     optionSuccessStatus: 200,
 };

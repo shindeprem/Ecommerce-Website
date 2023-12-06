@@ -7,19 +7,35 @@ const reducer = (state,action)=>{
             price:action.payload.price,
         }
 
-        console.log(state.item);
-        console.log(typeof(newItem.id));
-        console.log(typeof(state.item.id));
-        console.log(state.item.id); // undefined
+        console.log(state.item); // Clear
+        state.item.map((item)=>{
+            const {id} = item
+            console.log(id)
+        })
+        console.log(typeof(newItem.id)); // Clear`
+        console.log(typeof(state.item.id)); // undefined because It is collection of many items not a single Item
 
         // check whether the item already exist or not 
 
         const exitingItem  = state.item.find((item)=>{
-            item.id ===newItem.id
+            const {id} = item;
+            console.log(typeof(id));
+            return id === newItem.id // fixed
+
+            // if (id === newItem.id) {
+            //     console.log('same');
+            // }
+            // console.log(typeof(newItem.id));
+            // console.log('I m work');
         })
 
+        console.log(exitingItem);
+
         if(exitingItem){
+            // clear
+            console.log('It already exist');
             const updatedCart = state.item.map((item)=>{
+
                 if(item.id === newItem.id){
                     console.log('same id');
                     return {...item,quantity:item.quantity+1};
