@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 import PagesComp from "../../components/Pagination/pagination";
 
 const ProductListing = ()=>{
+
+    const [currentPage,setcurrentPage] = useState(1);
+
     
     const [productList, setProductList] = useState([])
     useEffect(() => {
@@ -48,6 +51,19 @@ const ProductListing = ()=>{
         setFilteredArray(productList)
     },[productList])
 
+    const [slicedArray,setSlicedArray] = useState([])
+    useEffect(() => {
+        const productsPerPage = 12;
+        const lastProduct = currentPage * productsPerPage;
+        const firstProduct = lastProduct - productsPerPage;
+        // const slicedArray = filteredArray.slice(firstProduct, lastProduct);
+        // setFilteredArray(slicedArray);
+        // This above code is setting parent array to new array
+        const newSlicedArr = filteredArray.slice(firstProduct,lastProduct);
+        setSlicedArray(newSlicedArr)
+
+    }, [currentPage,filteredArray]);
+
     return(
         <>
         <div className="product-listing" style={{height:isOpenFilter?'600px':''}}>
@@ -65,7 +81,7 @@ const ProductListing = ()=>{
               {/* pass array and setArray */}
             </div>
             <div className="all-products">
-                {filteredArray.map((product,index)=>{
+                {slicedArray.map((product,index)=>{
                     return(
                       
                         <ProductCard className={` product-card`} key={index}  {...product}/>
@@ -74,7 +90,7 @@ const ProductListing = ()=>{
             </div>
         </div>
         <div className="pages-component">
-            <PagesComp/>
+            <PagesComp setcurrentPage={setcurrentPage} productList={filteredArray} currentPage={currentPage}/>
         </div>
         </>
     )

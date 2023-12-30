@@ -1,0 +1,39 @@
+.parent-container{
+    width: max-content;
+    display: flex;
+    margin: 15px auto 30px;
+    column-gap: .7rem;
+    background-color: white;
+
+    button{
+        padding: 5px 10px;
+        font-size: 20px;
+        border-radius: 40px;
+        border: 1px solid gray;
+        outline: none;
+        background-color: white;
+        cursor: pointer;
+
+        &:hover{
+            border: 1px solid #2874F0;
+        }
+    }
+}
+@media screen and (min-width:620px) {
+    .parent-container{
+        width: 100%;
+        max-width: 620px;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .parent-container{
+        max-width: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 520px;
+        width: 100%;
+    }
+}
