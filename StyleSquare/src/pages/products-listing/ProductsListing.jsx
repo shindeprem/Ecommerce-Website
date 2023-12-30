@@ -4,6 +4,7 @@ import './ProductsListing.css'
 import Filters from "../../components/Filters/filters";
 import {AiOutlineRight} from 'react-icons/ai'
 import { Link } from "react-router-dom";
+import PagesComp from "../../components/Pagination/pagination";
 
 const ProductListing = ()=>{
     // const ProductsList = [
@@ -388,10 +389,10 @@ const ProductListing = ()=>{
     },[productList])
 
     return(
-      
+        <>
         <div className="product-listing" style={{height:isOpenFilter?'600px':''}}>
 
-            <Link to={'/products/cart'}>Your Cart</Link>
+            {/* <Link to={'/products/cart'}>Your Cart</Link> */}
 
             <div className={`filters-on-btn ${isOpenFilter?'not-show-filter-btn':''}`}>
               <div className="btn-container" onClick={handleFilter}>
@@ -412,6 +413,10 @@ const ProductListing = ()=>{
                 })}
             </div>
         </div>
+        <div className="pages-component">
+            <PagesComp/>
+        </div>
+        </>
     )
 }
 
